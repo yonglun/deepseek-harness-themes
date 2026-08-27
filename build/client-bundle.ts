@@ -53,7 +53,6 @@ export function clientBundle(id: string): UserConfig[] {
       plugins: [cssModulePlugin()],
       deps: {
         neverBundle: [HOST_MODULE, 'react', 'react/jsx-runtime'],
-        onlyBundle: ['clsx'],
       },
       outputOptions: {
         entryFileNames: 'client.js',

@@ -51,9 +51,7 @@
     "themes:verify": "node --import tsx scripts/verify-generated.ts",
     "pack:check": "pnpm pack --pack-destination .pack && node --import tsx build/package-smoke.ts"
   },
-  "dependencies": {
-    "clsx": "2.1.1"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "@deepseek-ai/cordis": "4.0.1",
     "@deepseek-ai/dsh-client-locale": "0.1.1-rc.2",
