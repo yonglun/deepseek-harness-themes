@@ -12,7 +12,8 @@
     "resolveJsonModule": true,
     "jsx": "react-jsx",
     "allowImportingTsExtensions": true,
-    "noEmit": true
+    "noEmit": true,
+    "types": ["node", "vitest/globals"]
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "tests/**/*.ts", "tests/**/*.tsx", "scripts/**/*.ts", "build/**/*.ts"]
 }
