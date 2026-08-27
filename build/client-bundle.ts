@@ -1,6 +1,28 @@
+import { readFileSync } from 'node:fs'
+import { basename, dirname, resolve } from 'node:path'
+import { transform } from 'lightningcss'
 import type { UserConfig } from 'tsdown'
 
 const HOST_MODULE = /^@deepseek-ai(?:\/|$)/
+
+function cssModulePlugin() {
+  return {
+    name: 'deepseek-harness-design-md-themes-css-modules',
+    resolveId(source: string, importer?: string) {
+      if (!source.endsWith('.module.css')) return null
+      return importer === undefined ? resolve(source) : resolve(dirname(importer), source)
+    },
+    load(id: string) {
+      if (!id.endsWith('.module.css')) return null
+      const filename = basename(id)
+      const result = transform({ filename, code: readFileSync(id), cssModules: true })
+      const classMap = Object.fromEntries(Object.entries(result.exports ?? {}).map(([key, value]) => [key, value.name]))
+      const tagName = `deepseek-harness-design-md-themes/${filename}`
+      const css = Buffer.from(result.code).toString('utf8')
+      return `const classes = ${JSON.stringify(classMap)};\nconst cssText = ${JSON.stringify(css)};\nconst tagName = ${JSON.stringify(tagName)};\nif (typeof document !== 'undefined' && !document.head.querySelector('style[data-plugin-css="' + tagName + '"]')) { const style = document.createElement('style'); style.setAttribute('data-plugin-css', tagName); style.textContent = cssText; document.head.appendChild(style); }\nexport const disposeCss = () => { if (typeof document !== 'undefined') document.head.querySelector('style[data-plugin-css="' + tagName + '"]')?.remove(); };\nexport default classes;`
+    },
+  }
+}
 
 /** Emit the Host library and the browser module-loader factory. */
 export function clientBundle(id: string): UserConfig[] {
@@ -21,6 +43,7 @@ export function clientBundle(id: string): UserConfig[] {
       format: 'cjs',
       platform: 'browser',
       clean: false,
+      plugins: [cssModulePlugin()],
       deps: {
         neverBundle: [HOST_MODULE, 'react', 'react/jsx-runtime'],
         onlyBundle: ['clsx'],
