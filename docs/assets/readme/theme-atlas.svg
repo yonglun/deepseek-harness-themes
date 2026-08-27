@@ -1,0 +1,967 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1584" height="2198" viewBox="0 0 1584 2198" role="img" aria-labelledby="title">
+  <title id="title">74 Design MD themes</title>
+  <rect width="1584" height="2198" rx="30" fill="#111318"/>
+  <text x="32" y="58" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="34" font-weight="800">THEME ATLAS / 01—74</text>
+  <g transform="translate(32 128)">
+      
+    <g data-theme-id="design-md-airbnb">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f7f7f7"/>
+      <rect width="53" height="104" rx="18" fill="#f7f7f7"/>
+      <rect x="35" width="18" height="104" fill="#f7f7f7"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#222222" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#222222" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#ff385c"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">AIRBNB</text>
+    </g>
+<g transform="translate(288 128)">
+      
+    <g data-theme-id="design-md-airtable">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f8fafc"/>
+      <rect width="53" height="104" rx="18" fill="#f8fafc"/>
+      <rect x="35" width="18" height="104" fill="#f8fafc"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#181d26" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#181d26" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#181d26"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">AIRTABLE</text>
+    </g>
+<g transform="translate(544 128)">
+      
+    <g data-theme-id="design-md-apple">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#fafafc"/>
+      <rect width="53" height="104" rx="18" fill="#fafafc"/>
+      <rect x="35" width="18" height="104" fill="#fafafc"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#1d1d1f" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#1d1d1f" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#0066cc"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">APPLE</text>
+    </g>
+<g transform="translate(800 128)">
+      
+    <g data-theme-id="design-md-binance">
+      <rect width="240" height="104" rx="18" fill="#0b0e11"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#101316"/>
+      <rect width="53" height="104" rx="18" fill="#101316"/>
+      <rect x="35" width="18" height="104" fill="#101316"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#ffffff" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#ffffff" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#fcd535"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">BINANCE</text>
+    </g>
+<g transform="translate(1056 128)">
+      
+    <g data-theme-id="design-md-bmw">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f7f7f7"/>
+      <rect width="53" height="104" rx="18" fill="#f7f7f7"/>
+      <rect x="35" width="18" height="104" fill="#f7f7f7"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#262626" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#262626" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#1c69d4"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">BMW</text>
+    </g>
+<g transform="translate(1312 128)">
+      
+    <g data-theme-id="design-md-bmw-m">
+      <rect width="240" height="104" rx="18" fill="#000000"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#0d0d0d"/>
+      <rect width="53" height="104" rx="18" fill="#0d0d0d"/>
+      <rect x="35" width="18" height="104" fill="#0d0d0d"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#ffffff" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#ffffff" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#ffffff"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">BMW-M</text>
+    </g>
+<g transform="translate(32 286)">
+      
+    <g data-theme-id="design-md-bugatti">
+      <rect width="240" height="104" rx="18" fill="#000000"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#0d0d0d"/>
+      <rect width="53" height="104" rx="18" fill="#0d0d0d"/>
+      <rect x="35" width="18" height="104" fill="#0d0d0d"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#ffffff" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#ffffff" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#ffffff"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">BUGATTI</text>
+    </g>
+<g transform="translate(288 286)">
+      
+    <g data-theme-id="design-md-cal">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f8f9fa"/>
+      <rect width="53" height="104" rx="18" fill="#f8f9fa"/>
+      <rect x="35" width="18" height="104" fill="#f8f9fa"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#111111" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#111111" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#111111"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">CAL.COM</text>
+    </g>
+<g transform="translate(544 286)">
+      
+    <g data-theme-id="design-md-claude">
+      <rect width="240" height="104" rx="18" fill="#faf9f5"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f5f0e8"/>
+      <rect width="53" height="104" rx="18" fill="#f5f0e8"/>
+      <rect x="35" width="18" height="104" fill="#f5f0e8"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#141413" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#141413" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#cc785c"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">CLAUDE</text>
+    </g>
+<g transform="translate(800 286)">
+      
+    <g data-theme-id="design-md-clay">
+      <rect width="240" height="104" rx="18" fill="#fffaf0"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#faf5e8"/>
+      <rect width="53" height="104" rx="18" fill="#faf5e8"/>
+      <rect x="35" width="18" height="104" fill="#faf5e8"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#0a0a0a" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#0a0a0a" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#0a0a0a"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">CLAY</text>
+    </g>
+<g transform="translate(1056 286)">
+      
+    <g data-theme-id="design-md-clickhouse">
+      <rect width="240" height="104" rx="18" fill="#0a0a0a"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#121212"/>
+      <rect width="53" height="104" rx="18" fill="#121212"/>
+      <rect x="35" width="18" height="104" fill="#121212"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#ffffff" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#ffffff" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#faff69"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">CLICKHOUSE</text>
+    </g>
+<g transform="translate(1312 286)">
+      
+    <g data-theme-id="design-md-cohere">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f7f7f7"/>
+      <rect width="53" height="104" rx="18" fill="#f7f7f7"/>
+      <rect x="35" width="18" height="104" fill="#f7f7f7"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#212121" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#212121" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#17171c"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">COHERE</text>
+    </g>
+<g transform="translate(32 444)">
+      
+    <g data-theme-id="design-md-coinbase">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f7f7f7"/>
+      <rect width="53" height="104" rx="18" fill="#f7f7f7"/>
+      <rect x="35" width="18" height="104" fill="#f7f7f7"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#0a0b0d" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#0a0b0d" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#0052ff"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">COINBASE</text>
+    </g>
+<g transform="translate(288 444)">
+      
+    <g data-theme-id="design-md-composio">
+      <rect width="240" height="104" rx="18" fill="#0f0f0f"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#181818"/>
+      <rect width="53" height="104" rx="18" fill="#181818"/>
+      <rect x="35" width="18" height="104" fill="#181818"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#ffffff" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#ffffff" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#0e48f7"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">COMPOSIO</text>
+    </g>
+<g transform="translate(544 444)">
+      
+    <g data-theme-id="design-md-cursor">
+      <rect width="240" height="104" rx="18" fill="#f7f7f4"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#ffffff"/>
+      <rect width="53" height="104" rx="18" fill="#ffffff"/>
+      <rect x="35" width="18" height="104" fill="#ffffff"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#26251e" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#26251e" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#f54e00"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">CURSOR</text>
+    </g>
+<g transform="translate(800 444)">
+      
+    <g data-theme-id="design-md-dell-1996">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#ffffff"/>
+      <rect width="53" height="104" rx="18" fill="#ffffff"/>
+      <rect x="35" width="18" height="104" fill="#ffffff"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#000000" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#000000" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#e91d2a"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">DELL 1996 INSPIRED</text>
+    </g>
+<g transform="translate(1056 444)">
+      
+    <g data-theme-id="design-md-elevenlabs">
+      <rect width="240" height="104" rx="18" fill="#f5f5f5"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#ffffff"/>
+      <rect width="53" height="104" rx="18" fill="#ffffff"/>
+      <rect x="35" width="18" height="104" fill="#ffffff"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#0c0a09" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#0c0a09" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#292524"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">ELEVENLABS</text>
+    </g>
+<g transform="translate(1312 444)">
+      
+    <g data-theme-id="design-md-expo">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#ffffff"/>
+      <rect width="53" height="104" rx="18" fill="#ffffff"/>
+      <rect x="35" width="18" height="104" fill="#ffffff"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#171717" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#171717" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#000000"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">EXPO</text>
+    </g>
+<g transform="translate(32 602)">
+      
+    <g data-theme-id="design-md-ferrari">
+      <rect width="240" height="104" rx="18" fill="#181818"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#303030"/>
+      <rect width="53" height="104" rx="18" fill="#303030"/>
+      <rect x="35" width="18" height="104" fill="#303030"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#ffffff" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#ffffff" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#da291c"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">FERRARI</text>
+    </g>
+<g transform="translate(288 602)">
+      
+    <g data-theme-id="design-md-figma">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f7f7f5"/>
+      <rect width="53" height="104" rx="18" fill="#f7f7f5"/>
+      <rect x="35" width="18" height="104" fill="#f7f7f5"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#000000" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#000000" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#000000"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">FIGMA</text>
+    </g>
+<g transform="translate(544 602)">
+      
+    <g data-theme-id="design-md-framer">
+      <rect width="240" height="104" rx="18" fill="#090909"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#0e0e0e"/>
+      <rect width="53" height="104" rx="18" fill="#0e0e0e"/>
+      <rect x="35" width="18" height="104" fill="#0e0e0e"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#ffffff" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#ffffff" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#ffffff"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">FRAMER</text>
+    </g>
+<g transform="translate(800 602)">
+      
+    <g data-theme-id="design-md-hashicorp">
+      <rect width="240" height="104" rx="18" fill="#000000"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#000000"/>
+      <rect width="53" height="104" rx="18" fill="#000000"/>
+      <rect x="35" width="18" height="104" fill="#000000"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#ffffff" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#ffffff" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#5a5a5a"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">HASHICORP</text>
+    </g>
+<g transform="translate(1056 602)">
+      
+    <g data-theme-id="design-md-hp">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f7f7f7"/>
+      <rect width="53" height="104" rx="18" fill="#f7f7f7"/>
+      <rect x="35" width="18" height="104" fill="#f7f7f7"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#1a1a1a" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#1a1a1a" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#024ad8"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">HP</text>
+    </g>
+<g transform="translate(1312 602)">
+      
+    <g data-theme-id="design-md-ibm">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f7f7f7"/>
+      <rect width="53" height="104" rx="18" fill="#f7f7f7"/>
+      <rect x="35" width="18" height="104" fill="#f7f7f7"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#161616" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#161616" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#0f62fe"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">IBM</text>
+    </g>
+<g transform="translate(32 760)">
+      
+    <g data-theme-id="design-md-intercom">
+      <rect width="240" height="104" rx="18" fill="#f5f1ec"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#ede9e4"/>
+      <rect width="53" height="104" rx="18" fill="#ede9e4"/>
+      <rect x="35" width="18" height="104" fill="#ede9e4"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#111111" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#111111" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#111111"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">INTERCOM</text>
+    </g>
+<g transform="translate(288 760)">
+      
+    <g data-theme-id="design-md-kraken">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f7f7f7"/>
+      <rect width="53" height="104" rx="18" fill="#f7f7f7"/>
+      <rect x="35" width="18" height="104" fill="#f7f7f7"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#101114" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#101114" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#7132f5"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">KRAKEN</text>
+    </g>
+<g transform="translate(544 760)">
+      
+    <g data-theme-id="design-md-lamborghini">
+      <rect width="240" height="104" rx="18" fill="#FFFFFF"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f5f5f5"/>
+      <rect width="53" height="104" rx="18" fill="#f5f5f5"/>
+      <rect x="35" width="18" height="104" fill="#f5f5f5"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#000000" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#000000" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#c68900"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">LAMBORGHINI</text>
+    </g>
+<g transform="translate(800 760)">
+      
+    <g data-theme-id="design-md-linear.app">
+      <rect width="240" height="104" rx="18" fill="#010102"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#030305"/>
+      <rect width="53" height="104" rx="18" fill="#030305"/>
+      <rect x="35" width="18" height="104" fill="#030305"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#f7f8f8" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#f7f8f8" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#5e6ad2"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">LINEAR</text>
+    </g>
+<g transform="translate(1056 760)">
+      
+    <g data-theme-id="design-md-lovable">
+      <rect width="240" height="104" rx="18" fill="#f7f4ed"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f0ede6"/>
+      <rect width="53" height="104" rx="18" fill="#f0ede6"/>
+      <rect x="35" width="18" height="104" fill="#f0ede6"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#1c1c1c" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#1c1c1c" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#3b82f6"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">LOVABLE</text>
+    </g>
+<g transform="translate(1312 760)">
+      
+    <g data-theme-id="design-md-mastercard">
+      <rect width="240" height="104" rx="18" fill="#F3F0EE"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#ebe8e6"/>
+      <rect width="53" height="104" rx="18" fill="#ebe8e6"/>
+      <rect x="35" width="18" height="104" fill="#ebe8e6"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#141413" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#141413" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#eb001b"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">MASTERCARD</text>
+    </g>
+<g transform="translate(32 918)">
+      
+    <g data-theme-id="design-md-meta">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f1f4f7"/>
+      <rect width="53" height="104" rx="18" fill="#f1f4f7"/>
+      <rect x="35" width="18" height="104" fill="#f1f4f7"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#1c1e21" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#1c1e21" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#0064e0"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">META</text>
+    </g>
+<g transform="translate(288 918)">
+      
+    <g data-theme-id="design-md-minimax">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f2f3f5"/>
+      <rect width="53" height="104" rx="18" fill="#f2f3f5"/>
+      <rect x="35" width="18" height="104" fill="#f2f3f5"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#0a0a0a" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#0a0a0a" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#0a0a0a"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">MINIMAX</text>
+    </g>
+<g transform="translate(544 918)">
+      
+    <g data-theme-id="design-md-mintlify">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#fafafa"/>
+      <rect width="53" height="104" rx="18" fill="#fafafa"/>
+      <rect x="35" width="18" height="104" fill="#fafafa"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#0a0a0a" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#0a0a0a" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#0a0a0a"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">MINTLIFY</text>
+    </g>
+<g transform="translate(800 918)">
+      
+    <g data-theme-id="design-md-miro">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#fafbfc"/>
+      <rect width="53" height="104" rx="18" fill="#fafbfc"/>
+      <rect x="35" width="18" height="104" fill="#fafbfc"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#1c1c1e" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#1c1c1e" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#1c1c1e"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">MIRO</text>
+    </g>
+<g transform="translate(1056 918)">
+      
+    <g data-theme-id="design-md-mistral.ai">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#fafafa"/>
+      <rect width="53" height="104" rx="18" fill="#fafafa"/>
+      <rect x="35" width="18" height="104" fill="#fafafa"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#1f1f1f" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#1f1f1f" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#fa520f"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">MISTRAL-AI</text>
+    </g>
+<g transform="translate(1312 918)">
+      
+    <g data-theme-id="design-md-mongodb">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f4f7f6"/>
+      <rect width="53" height="104" rx="18" fill="#f4f7f6"/>
+      <rect x="35" width="18" height="104" fill="#f4f7f6"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#001e2b" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#001e2b" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#00ad1c"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">MONGODB</text>
+    </g>
+<g transform="translate(32 1076)">
+      
+    <g data-theme-id="design-md-nike">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f7f7f7"/>
+      <rect width="53" height="104" rx="18" fill="#f7f7f7"/>
+      <rect x="35" width="18" height="104" fill="#f7f7f7"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#111111" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#111111" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#111111"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">NIKE</text>
+    </g>
+<g transform="translate(288 1076)">
+      
+    <g data-theme-id="design-md-nintendo-2001">
+      <rect width="240" height="104" rx="18" fill="#7a8aba"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#ffffff"/>
+      <rect width="53" height="104" rx="18" fill="#ffffff"/>
+      <rect x="35" width="18" height="104" fill="#ffffff"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#151721" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#151721" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#880000"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">NINTENDO.COM (2001) ANALYSIS</text>
+    </g>
+<g transform="translate(544 1076)">
+      
+    <g data-theme-id="design-md-notion">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#fafaf9"/>
+      <rect width="53" height="104" rx="18" fill="#fafaf9"/>
+      <rect x="35" width="18" height="104" fill="#fafaf9"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#1a1a1a" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#1a1a1a" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#5645d4"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">NOTION</text>
+    </g>
+<g transform="translate(800 1076)">
+      
+    <g data-theme-id="design-md-nvidia">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f7f7f7"/>
+      <rect width="53" height="104" rx="18" fill="#f7f7f7"/>
+      <rect x="35" width="18" height="104" fill="#f7f7f7"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#000000" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#000000" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#64a600"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">NVIDIA</text>
+    </g>
+<g transform="translate(1056 1076)">
+      
+    <g data-theme-id="design-md-ollama">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#fafafa"/>
+      <rect width="53" height="104" rx="18" fill="#fafafa"/>
+      <rect x="35" width="18" height="104" fill="#fafafa"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#000000" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#000000" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#000000"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">OLLAMA</text>
+    </g>
+<g transform="translate(1312 1076)">
+      
+    <g data-theme-id="design-md-opencode.ai">
+      <rect width="240" height="104" rx="18" fill="#fdfcfc"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f8f7f7"/>
+      <rect width="53" height="104" rx="18" fill="#f8f7f7"/>
+      <rect x="35" width="18" height="104" fill="#f8f7f7"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#201d1d" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#201d1d" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#201d1d"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">OPENCODE</text>
+    </g>
+<g transform="translate(32 1234)">
+      
+    <g data-theme-id="design-md-pinterest">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#fbfbf9"/>
+      <rect width="53" height="104" rx="18" fill="#fbfbf9"/>
+      <rect x="35" width="18" height="104" fill="#fbfbf9"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#000000" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#000000" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#e60023"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">PINTEREST</text>
+    </g>
+<g transform="translate(288 1234)">
+      
+    <g data-theme-id="design-md-playstation">
+      <rect width="240" height="104" rx="18" fill="#000000"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#000000"/>
+      <rect width="53" height="104" rx="18" fill="#000000"/>
+      <rect x="35" width="18" height="104" fill="#000000"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#ffffff" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#ffffff" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#0070d1"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">PLAYSTATION</text>
+    </g>
+<g transform="translate(544 1234)">
+      
+    <g data-theme-id="design-md-posthog">
+      <rect width="240" height="104" rx="18" fill="#eeefe9"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#e5e7e0"/>
+      <rect width="53" height="104" rx="18" fill="#e5e7e0"/>
+      <rect x="35" width="18" height="104" fill="#e5e7e0"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#23251d" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#23251d" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#c67700"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">POSTHOG</text>
+    </g>
+<g transform="translate(800 1234)">
+      
+    <g data-theme-id="design-md-raycast">
+      <rect width="240" height="104" rx="18" fill="#07080a"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#121212"/>
+      <rect width="53" height="104" rx="18" fill="#121212"/>
+      <rect x="35" width="18" height="104" fill="#121212"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#f4f4f6" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#f4f4f6" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#ffffff"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">RAYCAST</text>
+    </g>
+<g transform="translate(1056 1234)">
+      
+    <g data-theme-id="design-md-renault">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f7f7f7"/>
+      <rect width="53" height="104" rx="18" fill="#f7f7f7"/>
+      <rect x="35" width="18" height="104" fill="#f7f7f7"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#000000" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#000000" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#a99500"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">RENAULT</text>
+    </g>
+<g transform="translate(1312 1234)">
+      
+    <g data-theme-id="design-md-replicate">
+      <rect width="240" height="104" rx="18" fill="#f9f7f3"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#ffffff"/>
+      <rect width="53" height="104" rx="18" fill="#ffffff"/>
+      <rect x="35" width="18" height="104" fill="#ffffff"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#202020" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#202020" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#ea2804"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">REPLICATE</text>
+    </g>
+<g transform="translate(32 1392)">
+      
+    <g data-theme-id="design-md-resend">
+      <rect width="240" height="104" rx="18" fill="#000000"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#0a0a0c"/>
+      <rect width="53" height="104" rx="18" fill="#0a0a0c"/>
+      <rect x="35" width="18" height="104" fill="#0a0a0c"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#fcfdff" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#fcfdff" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#fcfdff"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">RESEND</text>
+    </g>
+<g transform="translate(288 1392)">
+      
+    <g data-theme-id="design-md-revolut">
+      <rect width="240" height="104" rx="18" fill="#000000"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#000000"/>
+      <rect width="53" height="104" rx="18" fill="#000000"/>
+      <rect x="35" width="18" height="104" fill="#000000"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#ffffff" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#ffffff" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#494fdf"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">REVOLUT</text>
+    </g>
+<g transform="translate(544 1392)">
+      
+    <g data-theme-id="design-md-runwayml">
+      <rect width="240" height="104" rx="18" fill="#1a1a1a"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#1f1f1f"/>
+      <rect width="53" height="104" rx="18" fill="#1f1f1f"/>
+      <rect x="35" width="18" height="104" fill="#1f1f1f"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#ffffff" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#ffffff" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#666666"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">RUNWAY</text>
+    </g>
+<g transform="translate(800 1392)">
+      
+    <g data-theme-id="design-md-sanity">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f6f6f6"/>
+      <rect width="53" height="104" rx="18" fill="#f6f6f6"/>
+      <rect x="35" width="18" height="104" fill="#f6f6f6"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#0b0b0b" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#0b0b0b" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#f36458"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">SANITY</text>
+    </g>
+<g transform="translate(1056 1392)">
+      
+    <g data-theme-id="design-md-sentry">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f7f7f8"/>
+      <rect width="53" height="104" rx="18" fill="#f7f7f8"/>
+      <rect x="35" width="18" height="104" fill="#f7f7f8"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#1f1633" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#1f1633" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#150f23"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">SENTRI-INSPIRED</text>
+    </g>
+<g transform="translate(1312 1392)">
+      
+    <g data-theme-id="design-md-shopify">
+      <rect width="240" height="104" rx="18" fill="#000000"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#000000"/>
+      <rect width="53" height="104" rx="18" fill="#000000"/>
+      <rect x="35" width="18" height="104" fill="#000000"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#ffffff" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#ffffff" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#5a5a5a"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">SHOPIFI-INSPIRED</text>
+    </g>
+<g transform="translate(32 1550)">
+      
+    <g data-theme-id="design-md-slack">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f7f7f7"/>
+      <rect width="53" height="104" rx="18" fill="#f7f7f7"/>
+      <rect x="35" width="18" height="104" fill="#f7f7f7"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#1d1d1d" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#1d1d1d" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#4a154b"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">SLACC-INSPIRED</text>
+    </g>
+<g transform="translate(288 1550)">
+      
+    <g data-theme-id="design-md-spacex">
+      <rect width="240" height="104" rx="18" fill="#000000"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#000000"/>
+      <rect width="53" height="104" rx="18" fill="#000000"/>
+      <rect x="35" width="18" height="104" fill="#000000"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#ffffff" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#ffffff" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#5a5a5a"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">SPACEX-INSPIRED</text>
+    </g>
+<g transform="translate(544 1550)">
+      
+    <g data-theme-id="design-md-spotify">
+      <rect width="240" height="104" rx="18" fill="#181818"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#1d1d1d"/>
+      <rect width="53" height="104" rx="18" fill="#1d1d1d"/>
+      <rect x="35" width="18" height="104" fill="#1d1d1d"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#ffffff" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#ffffff" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#1ed760"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">SPOTIFY</text>
+    </g>
+<g transform="translate(800 1550)">
+      
+    <g data-theme-id="design-md-starbucks">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f5f5f5"/>
+      <rect width="53" height="104" rx="18" fill="#f5f5f5"/>
+      <rect x="35" width="18" height="104" fill="#f5f5f5"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#000000" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#000000" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#006241"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">STARBUCKS</text>
+    </g>
+<g transform="translate(1056 1550)">
+      
+    <g data-theme-id="design-md-stripe">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f7f8f9"/>
+      <rect width="53" height="104" rx="18" fill="#f7f8f9"/>
+      <rect x="35" width="18" height="104" fill="#f7f8f9"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#0d253d" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#0d253d" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#533afd"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">STRIPI-INSPIRED</text>
+    </g>
+<g transform="translate(1312 1550)">
+      
+    <g data-theme-id="design-md-supabase">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f7f7f7"/>
+      <rect width="53" height="104" rx="18" fill="#f7f7f7"/>
+      <rect x="35" width="18" height="104" fill="#f7f7f7"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#171717" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#171717" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#00aa6c"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">SUPABAZE-INSPIRED</text>
+    </g>
+<g transform="translate(32 1708)">
+      
+    <g data-theme-id="design-md-superhuman">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f8f8f8"/>
+      <rect width="53" height="104" rx="18" fill="#f8f8f8"/>
+      <rect x="35" width="18" height="104" fill="#f8f8f8"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#292827" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#292827" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#1b1938"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">SUPERHUMON-INSPIRED</text>
+    </g>
+<g transform="translate(288 1708)">
+      
+    <g data-theme-id="design-md-tesla">
+      <rect width="240" height="104" rx="18" fill="#FFFFFF"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f9fbff"/>
+      <rect width="53" height="104" rx="18" fill="#f9fbff"/>
+      <rect x="35" width="18" height="104" fill="#f9fbff"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#3a65dc" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#3a65dc" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#3e6ae1"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">TESLA</text>
+    </g>
+<g transform="translate(544 1708)">
+      
+    <g data-theme-id="design-md-theverge">
+      <rect width="240" height="104" rx="18" fill="#131313"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#181818"/>
+      <rect width="53" height="104" rx="18" fill="#181818"/>
+      <rect x="35" width="18" height="104" fill="#181818"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#ffffff" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#ffffff" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#3860be"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">THE VERGE</text>
+    </g>
+<g transform="translate(800 1708)">
+      
+    <g data-theme-id="design-md-together.ai">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f5f5f5"/>
+      <rect width="53" height="104" rx="18" fill="#f5f5f5"/>
+      <rect x="35" width="18" height="104" fill="#f5f5f5"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#000000" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#000000" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#000000"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">TOGETHER-AI-INSPIRED</text>
+    </g>
+<g transform="translate(1056 1708)">
+      
+    <g data-theme-id="design-md-uber">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f5f5f5"/>
+      <rect width="53" height="104" rx="18" fill="#f5f5f5"/>
+      <rect x="35" width="18" height="104" fill="#f5f5f5"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#000000" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#000000" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#000000"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">UBER-INSPIRED</text>
+    </g>
+<g transform="translate(1312 1708)">
+      
+    <g data-theme-id="design-md-vercel">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f7f7f7"/>
+      <rect width="53" height="104" rx="18" fill="#f7f7f7"/>
+      <rect x="35" width="18" height="104" fill="#f7f7f7"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#171717" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#171717" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#171717"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">VERCEL-INSPIRED</text>
+    </g>
+<g transform="translate(32 1866)">
+      
+    <g data-theme-id="design-md-vodafone">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f8f8f8"/>
+      <rect width="53" height="104" rx="18" fill="#f8f8f8"/>
+      <rect x="35" width="18" height="104" fill="#f8f8f8"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#25282b" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#25282b" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#e60000"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">VODAFONE-INSPIRED</text>
+    </g>
+<g transform="translate(288 1866)">
+      
+    <g data-theme-id="design-md-voltagent">
+      <rect width="240" height="104" rx="18" fill="#101010"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#151515"/>
+      <rect width="53" height="104" rx="18" fill="#151515"/>
+      <rect x="35" width="18" height="104" fill="#151515"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#f2f2f2" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#f2f2f2" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#00d992"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">VOLTAGENT-INSPIRED</text>
+    </g>
+<g transform="translate(544 1866)">
+      
+    <g data-theme-id="design-md-warp">
+      <rect width="240" height="104" rx="18" fill="#2b2622"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#302b27"/>
+      <rect width="53" height="104" rx="18" fill="#302b27"/>
+      <rect x="35" width="18" height="104" fill="#302b27"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#f7f5f0" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#f7f5f0" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#f7f5f0"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">WARP-INSPIRED</text>
+    </g>
+<g transform="translate(800 1866)">
+      
+    <g data-theme-id="design-md-webflow">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f6f6f6"/>
+      <rect width="53" height="104" rx="18" fill="#f6f6f6"/>
+      <rect x="35" width="18" height="104" fill="#f6f6f6"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#080808" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#080808" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#080808"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">WEBFLOW-INSPIRED</text>
+    </g>
+<g transform="translate(1056 1866)">
+      
+    <g data-theme-id="design-md-wired">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f5f5f5"/>
+      <rect width="53" height="104" rx="18" fill="#f5f5f5"/>
+      <rect x="35" width="18" height="104" fill="#f5f5f5"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#000000" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#000000" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#000000"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">WIRED-INSPIRED</text>
+    </g>
+<g transform="translate(1312 1866)">
+      
+    <g data-theme-id="design-md-wise">
+      <rect width="240" height="104" rx="18" fill="#ffffff"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f7f7f6"/>
+      <rect width="53" height="104" rx="18" fill="#f7f7f6"/>
+      <rect x="35" width="18" height="104" fill="#f7f7f6"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#0e0f0c" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#0e0f0c" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#61a62a"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">WISE-INSPIRED</text>
+    </g>
+<g transform="translate(32 2024)">
+      
+    <g data-theme-id="design-md-x.ai">
+      <rect width="240" height="104" rx="18" fill="#0a0a0a"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#0f0f0f"/>
+      <rect width="53" height="104" rx="18" fill="#0f0f0f"/>
+      <rect x="35" width="18" height="104" fill="#0f0f0f"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#ffffff" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#ffffff" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#ffffff"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">XAI-INSPIRED</text>
+    </g>
+<g transform="translate(288 2024)">
+      
+    <g data-theme-id="design-md-zapier">
+      <rect width="240" height="104" rx="18" fill="#fffefb"/>
+      <rect x="53" width="187" height="104" rx="18" fill="#f7f6f3"/>
+      <rect width="53" height="104" rx="18" fill="#f7f6f3"/>
+      <rect x="35" width="18" height="104" fill="#f7f6f3"/>
+      <rect x="81" y="29" width="110" height="10" rx="5" fill="#201515" opacity=".78"/>
+      <rect x="81" y="51" width="74" height="8" rx="4" fill="#201515" opacity=".38"/>
+      <rect x="81" y="77" width="46" height="22" rx="6" fill="#ff4f00"/>
+    </g>
+      <text x="4" y="132" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" font-weight="700">ZAPIER-INSPIRED</text>
+    </g>
+</svg>
