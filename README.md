@@ -1,37 +1,53 @@
 # deepseek-harness-design-md-themes
 
-An official-token, non-invasive DeepSeek Harness client plugin that brings 74 deterministic themes derived from [awesome-design-md](https://github.com/VoltAgent/awesome-design-md/tree/main/design-md) into Settings → Themes.
+Chinese version: [README.zh.md](README.zh.md)
 
-## Install
+![74 deterministic Design MD themes for DeepSeek Harness](docs/assets/readme/hero.png)
 
-Install the package with the DeepSeek Harness plugin manager (or add the package to the profile's plugin list):
+> 74 deterministic themes generated from `awesome-design-md`, installed through the native DeepSeek Harness plugin mechanism—without patching Harness source code.
+
+## Quick start
 
 ```bash
 dsh plugin add deepseek-harness-design-md-themes
+dsh web
 ```
 
-Restart the web client, then open **Settings → Themes**. The gallery exposes the built-in Light, Dark, and System choices plus 74 source-derived cards. Search and category filters are local and keyboard accessible; selecting a card writes only the plugin namespace `deepseek-harness-design-md-themes`.
+Open **Settings → Design MD themes**, choose a card, and the selection remains active after reload.
 
-The plugin uses the documented `dsh.client` injection list and Cordis patch entry. It registers themes through the host theme service and contributes one `settings.section`; it does not patch or replace Harness source files, global styles, or unrelated settings.
+## Why this plugin
 
-## Compatibility
+- **Native integration** — registers themes through Theme Service and contributes one `settings.section`.
+- **Deterministic catalog** — 74 themes generated from pinned source commit `8147538b4226ae41e2487a9179e3bcc1f68e8554`.
+- **Owned persistence** — writes only the `deepseek-harness-design-md-themes` settings namespace.
 
-- DeepSeek Harness `0.1.1-rc.2` (the peer baseline used for the generated artifact).
-- Node.js `^22.19.0 || >=24.0.0` for local generation and packaging.
-- React `18.2+` or `19.x` supplied by Harness.
+## Eight signature themes
 
-See [docs/installation.md](docs/installation.md) for a profile-oriented install checklist and [docs/themes.md](docs/themes.md) for the complete catalog and source pins.
+<p align="center">
+  <img src="docs/assets/readme/spotlight/claude.svg" width="48%" alt="Claude theme preview">
+  <img src="docs/assets/readme/spotlight/binance.svg" width="48%" alt="Binance theme preview">
+  <img src="docs/assets/readme/spotlight/linear.app.svg" width="48%" alt="Linear theme preview">
+  <img src="docs/assets/readme/spotlight/airbnb.svg" width="48%" alt="Airbnb theme preview">
+  <img src="docs/assets/readme/spotlight/spotify.svg" width="48%" alt="Spotify theme preview">
+  <img src="docs/assets/readme/spotlight/posthog.svg" width="48%" alt="PostHog theme preview">
+  <img src="docs/assets/readme/spotlight/ferrari.svg" width="48%" alt="Ferrari theme preview">
+  <img src="docs/assets/readme/spotlight/nintendo-2001.svg" width="48%" alt="Nintendo 2001 theme preview">
+</p>
 
-## Persistence and removal
+## All 74 themes
 
-The selected value is persisted under the plugin-owned namespace. Built-in `light`, `dark`, and `system` remain available even when no generated theme is selected. If another provider changes the active theme, the controller adopts that choice without writing over the provider's settings; a later local selection is retried through a serial write queue.
+![Complete atlas of 74 Design MD themes](docs/assets/readme/theme-atlas.svg)
 
-When the plugin is removed, its settings namespace and registered themes are no longer read by the plugin. Existing host configuration can be deleted with the Harness settings UI if desired. A remote/desktop host may scope settings to its process; this package cannot promise cross-process persistence and documents that limitation rather than modifying host storage.
+See [the catalog](docs/themes.md) for theme IDs, categories, source paths, and contrast adjustments.
 
-## Upgrade and source maintenance
+## Non-invasive by design
 
-The generated output is deterministic and checked in. Source commit and file hashes are recorded in `src/themes/generated/source-manifest.json`; WCAG corrections are reported in `reports/contrast.json`. Run the commands in [docs/maintenance.md](docs/maintenance.md) when updating the pinned source repository.
+The plugin uses the documented `dsh.client` injection list, Cordis patch contribution, Theme Service, Settings Scope, Locale Service, and UI Slots. It does not patch Harness components, query internal DOM, override unrelated global CSS, or replace Harness files.
 
-## Attribution
+## Compatibility and maintenance
 
-The source analyses are derived from VoltAgent's awesome-design-md collection. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for attribution and license notes.
+- DeepSeek Harness `0.1.1-rc.2`
+- Node.js `^22.19.0 || >=24.0.0` for generation and packaging
+- React `18.2+` or `19.x`, supplied by Harness
+
+Installation: [docs/installation.md](docs/installation.md) · Maintenance: [docs/maintenance.md](docs/maintenance.md) · Attribution: [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)

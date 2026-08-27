@@ -1,25 +1,53 @@
 # deepseek-harness-design-md-themes
 
-这是一个遵循 DeepSeek Harness 官方插件机制的无侵入式客户端主题插件：把 [awesome-design-md](https://github.com/VoltAgent/awesome-design-md/tree/main/design-md) 的 74 个设计分析转换为官方 token 主题，并放入“设置 → 主题”卡片墙。
+英文版：[README.md](README.md)
 
-## 安装
+![DeepSeek Harness 的 74 个确定性 Design MD 主题](docs/assets/readme/hero.png)
+
+> 基于 `awesome-design-md` 确定性生成 74 个主题，通过 DeepSeek Harness 原生插件机制安装，无需修改 Harness 源码。
+
+## 快速开始
 
 ```bash
 dsh plugin add deepseek-harness-design-md-themes
+dsh web
 ```
 
-重启 Web 客户端后打开“设置 → 主题”。页面包含内置 Light、Dark、System，以及 74 个来源主题；搜索和分类筛选均在本地完成，并支持键盘操作。选择结果只写入插件自有命名空间 `deepseek-harness-design-md-themes`。
+打开“设置 → Design MD themes”，选择主题卡片；刷新页面后仍会保持所选主题。
 
-插件使用文档化的 `dsh.client` 注入列表和 Cordis patch，通过宿主 Theme Service 注册主题，并贡献一个 `settings.section`。不会修改 Harness 源码、全局样式或其他设置。
+## 为什么选择这个插件
+
+- **原生集成**——通过 Theme Service 注册主题，并贡献一个 `settings.section`。
+- **确定性目录**——74 个主题来自固定上游提交 `8147538b4226ae41e2487a9179e3bcc1f68e8554`。
+- **独立持久化**——只写入 `deepseek-harness-design-md-themes` 自有设置命名空间。
+
+## 八个代表性主题
+
+<p align="center">
+  <img src="docs/assets/readme/spotlight/claude.svg" width="48%" alt="Claude 主题预览">
+  <img src="docs/assets/readme/spotlight/binance.svg" width="48%" alt="Binance 主题预览">
+  <img src="docs/assets/readme/spotlight/linear.app.svg" width="48%" alt="Linear 主题预览">
+  <img src="docs/assets/readme/spotlight/airbnb.svg" width="48%" alt="Airbnb 主题预览">
+  <img src="docs/assets/readme/spotlight/spotify.svg" width="48%" alt="Spotify 主题预览">
+  <img src="docs/assets/readme/spotlight/posthog.svg" width="48%" alt="PostHog 主题预览">
+  <img src="docs/assets/readme/spotlight/ferrari.svg" width="48%" alt="Ferrari 主题预览">
+  <img src="docs/assets/readme/spotlight/nintendo-2001.svg" width="48%" alt="Nintendo 2001 主题预览">
+</p>
+
+## 全部 74 个主题
+
+![74 个 Design MD 主题完整图谱](docs/assets/readme/theme-atlas.svg)
+
+主题 ID、分类、来源路径和对比度调整见[中文主题目录](docs/themes.zh-CN.md)。
+
+## 无侵入式设计
+
+插件只使用公开的 `dsh.client` 注入列表、Cordis patch、Theme Service、Settings Scope、Locale Service 和 UI Slots。它不会修改 Harness 组件、访问内部 DOM、覆盖无关全局 CSS 或替换 Harness 文件。
 
 ## 兼容性与维护
 
-当前生成基线为 DeepSeek Harness `0.1.1-rc.2`，本地生成/打包需要 Node.js `^22.19.0 || >=24.0.0`。完整安装步骤见 [docs/installation.md](docs/installation.md)，74 个主题、来源 commit 和哈希见 [docs/themes.md](docs/themes.md)。
+- DeepSeek Harness `0.1.1-rc.2`
+- 本地生成和打包需要 Node.js `^22.19.0 || >=24.0.0`
+- React `18.2+` 或 `19.x`，由 Harness 提供
 
-生成文件已提交并保持确定性；来源清单位于 `src/themes/generated/source-manifest.json`，WCAG 调整报告位于 `reports/contrast.json`。更新来源时执行 [docs/maintenance.md](docs/maintenance.md) 中的命令。
-
-## 持久化与卸载
-
-选中的主题写入插件命名空间；内置主题始终保留。若其他 provider 改变当前主题，控制器会采用该选择而不覆盖对方设置；之后的本地选择通过串行写队列重试。远程/桌面宿主可能只在进程内保存设置，插件不会修改宿主存储来规避该限制。
-
-来源分析来自 VoltAgent 的 awesome-design-md 集合，详见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+安装：[docs/installation.zh-CN.md](docs/installation.zh-CN.md) · 维护：[docs/maintenance.zh-CN.md](docs/maintenance.zh-CN.md) · 第三方声明：[THIRD_PARTY_NOTICES.zh-CN.md](THIRD_PARTY_NOTICES.zh-CN.md)
