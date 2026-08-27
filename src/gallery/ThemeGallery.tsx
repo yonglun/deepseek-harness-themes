@@ -5,7 +5,13 @@ import { createGalleryStore, type GalleryStore } from './store.ts'
 import { filterCatalog } from './filter.ts'
 import { en, type GalleryLocale } from './locales.ts'
 import { ThemeCard } from './ThemeCard.tsx'
-import styles from './ThemeGallery.module.css'
+import styles, * as cssModule from './ThemeGallery.module.css?dsh'
+
+export function disposeGalleryStyles(): void {
+  const disposer = (cssModule as { readonly disposeCss?: () => void }).disposeCss
+  if (disposer !== undefined) disposer()
+  else if (typeof document !== 'undefined') document.head.querySelector('style[data-plugin-css="deepseek-harness-design-md-themes/ThemeGallery.module.css"]')?.remove()
+}
 
 export interface ThemeGalleryProps {
   readonly catalog: readonly ThemeCatalogEntry[]

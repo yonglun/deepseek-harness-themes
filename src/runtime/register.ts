@@ -1,4 +1,4 @@
-import { THEME_TOKEN_NAMES } from '../../config/theme-tokens.ts'
+import { THEME_TOKEN_NAMES } from '../config/theme-tokens.ts'
 import type { ThemeCatalogEntry } from '../themes/contracts.ts'
 import type { ThemeService } from './contracts.ts'
 
