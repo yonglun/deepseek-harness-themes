@@ -112,21 +112,19 @@ export function correctForeground(
     const endpoint = direction < 0 ? 0 : 1
     const endpointValue = candidateAt(base, endpoint)
     if (!passes(endpointValue)) continue
-    let low = Math.min(baseLightness, endpoint)
-    let high = Math.max(baseLightness, endpoint)
+    let low = 0
+    let high = 1
     for (let iteration = 0; iteration < 32; iteration += 1) {
-      const mid = (low + high) / 2
-      const value = candidateAt(base, mid)
+      const progress = (low + high) / 2
+      const lightness = baseLightness + (endpoint - baseLightness) * progress
+      const value = candidateAt(base, lightness)
       if (passes(value)) {
-        if (direction < 0) high = mid
-        else low = mid
-      } else if (direction < 0) {
-        low = mid
+        high = progress
       } else {
-        high = mid
+        low = progress
       }
     }
-    const lightness = direction < 0 ? high : low
+    const lightness = baseLightness + (endpoint - baseLightness) * high
     const value = candidateAt(base, lightness)
     candidates.push({ value, delta: Math.abs(lightness - baseLightness) })
   }

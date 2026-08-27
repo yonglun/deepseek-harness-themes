@@ -89,9 +89,14 @@ function parseLegacyDesign(relativePath: string, text: string): {
     .filter(part => part.length > 0 && !part.startsWith('#') && !part.startsWith('-'))
   const description = paragraphs[0]?.replace(/\s+/g, ' ').trim() || `${title} design system`
   const colors: Record<string, string> = {}
-  const hexPattern = /#[0-9a-f]{3,8}\b/gi
-  for (const line of text.split(/\r?\n/)) {
-    const matches = line.match(hexPattern) ?? []
+  const paletteStart = text.search(/^##\s+2\.\s+Color Palette/im)
+  const nextSection = paletteStart < 0 ? -1 : text.slice(paletteStart + 1).search(/^##\s+3\./im)
+  const paletteSection = paletteStart < 0
+    ? text
+    : text.slice(paletteStart, nextSection < 0 ? undefined : paletteStart + 1 + nextSection)
+  const colorPattern = /#[0-9a-f]{3,8}\b|rgba?\([^)]*\)|hsla?\([^)]*\)/gi
+  for (const line of paletteSection.split(/\r?\n/)) {
+    const matches = line.match(colorPattern) ?? []
     if (matches.length === 0) continue
     const label = /\*\*([^*]+)\*\*/.exec(line)?.[1]
     for (const [index, color] of matches.entries()) {
@@ -101,15 +106,16 @@ function parseLegacyDesign(relativePath: string, text: string): {
   }
   if (Object.keys(colors).length === 0) colors.primary = '#666666'
   const entries = Object.entries(colors)
-  const find = (pattern: RegExp): string | undefined => {
-    const hit = entries.find(([key]) => pattern.test(key))
+  const find = (pattern: RegExp, exclude?: RegExp): string | undefined => {
+    const hit = entries.find(([key]) => pattern.test(key) && (exclude === undefined || !exclude.test(key)))
     return hit?.[1]
   }
-  if (find(/canvas|background|surface|white|cream|page/iu) === undefined) colors.canvas = entries[1]?.[1] ?? entries[0]![1]
-  else if (colors.canvas === undefined) colors.canvas = find(/canvas|background|surface|white|cream|page/iu)!
-  if (find(/ink|text|black|charcoal|dark/iu) === undefined) colors.ink = entries[0]![1]
-  else if (colors.ink === undefined) colors.ink = find(/ink|text|black|charcoal|dark/iu)!
-  if (colors.primary === undefined) colors.primary = entries[0]![1]
+  if (colors.canvas === undefined) colors.canvas = find(/canvas|background|surface|white|cream|neutral|page/iu) ?? entries[0]![1]
+  if (colors.ink === undefined) colors.ink = find(/ink|text|near-black|black|charcoal/iu) ?? entries[0]![1]
+  if (colors.primary === undefined) colors.primary = find(/primary|brand|accent|purple|gold|blue|red|green/iu, /text|surface|background|neutral|dark|light|mute/iu) ?? entries[0]![1]
+  if (colors.success === undefined) colors.success = find(/success|positive|green/iu, /dark|light|pale|mint/iu) ?? '#15803d'
+  if (colors.warning === undefined) colors.warning = find(/warning|caution|amber|yellow/iu, /light|pale/iu) ?? '#a16207'
+  if (colors.error === undefined) colors.error = find(/error|danger|destructive|red/iu, /light|pale/iu) ?? '#b91c1c'
   const fontLine = /(?:font family|primary|display)[^\n]*?(?:\*\*|:)?\s*([^\n]+)/i.exec(text)
   const fontFamily = fontLine?.[1]?.replace(/[|*_`]/g, '').trim() || 'system-ui, sans-serif'
   return {

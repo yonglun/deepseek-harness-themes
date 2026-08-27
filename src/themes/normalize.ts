@@ -101,7 +101,7 @@ export function normalizeTheme(source: SourceDesign, override?: ThemeOverride): 
   const successSeed = applyOverrideRole('success', source, override, firstColor(source.colors, ROLE_KEYS.success) ?? '#15803d')
   const warningSeed = applyOverrideRole('warning', source, override, firstColor(source.colors, ROLE_KEYS.warning) ?? '#a16207')
   const errorSeed = applyOverrideRole('error', source, override, firstColor(source.colors, ROLE_KEYS.error) ?? '#b91c1c')
-  const textBackgrounds = [base, layer1, layer2]
+  const textBackgrounds = [base, layer1, layer2, layer3]
   const palette: CanonicalPalette = Object.freeze({
     base,
     layer1,
