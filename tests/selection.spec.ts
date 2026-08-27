@@ -40,7 +40,7 @@ function makeBench(options: {
     return new Promise<void>(resolve => pending.push(() => { durable = value; resolve() }))
   })
   const settings = {
-    getSnapshot: () => ({ value: { selection: durable }, revision: 1 }),
+    getSnapshot: () => ({ status: 'ready' as const, value: { selection: durable }, base: undefined, user: undefined, revision: 1, writable: true, mode: 'host' as const }),
     set: settingsSet,
     subscribe: vi.fn(() => () => undefined),
   }
@@ -63,6 +63,55 @@ function makeBench(options: {
 }
 
 describe('selection controller', () => {
+  it('reasserts a custom selection when host adoption echoes a built-in during persistence', async () => {
+    const b = makeBench({ current: 'dark', durable: 'dark', deferredWrites: true })
+
+    b.controller.select('design-md-claude')
+    b.controller.sync(snapshot('dark', 2))
+    await Promise.resolve()
+
+    expect(b.setTheme).toHaveBeenNthCalledWith(1, 'design-md-claude')
+    expect(b.setTheme).toHaveBeenNthCalledWith(2, 'design-md-claude')
+    expect(b.controller.getSnapshot().preference).toBe('design-md-claude')
+    expect(b.settingsSet).toHaveBeenCalledTimes(1)
+  })
+
+  it('reasserts after the settings write resolves but before delayed host adoption', async () => {
+    const b = makeBench({ current: 'dark', durable: 'dark' })
+
+    b.controller.select('design-md-claude')
+    await Promise.resolve()
+    b.controller.sync(snapshot('dark', 2))
+    await Promise.resolve()
+
+    expect(b.setTheme).toHaveBeenNthCalledWith(2, 'design-md-claude')
+    expect(b.controller.getSnapshot().preference).toBe('design-md-claude')
+  })
+
+  it('defers restore until the settings scope has a value', () => {
+    let ready = false
+    let notify = (): void => undefined
+    const setTheme = vi.fn()
+    const settings = {
+      getSnapshot: () => ready
+        ? { status: 'ready' as const, value: { selection: 'design-md-claude' }, base: undefined, user: undefined, revision: 1, writable: true, mode: 'host' as const }
+        : { status: 'loading' as const, value: undefined, base: undefined, user: undefined, revision: undefined, writable: false, mode: 'host' as const },
+      set: vi.fn(() => Promise.resolve()),
+      subscribe: vi.fn((listener: () => void) => { notify = listener; return () => undefined }),
+    }
+    const controller = createSelectionController({
+      theme: { getTheme: () => snapshot('system'), setTheme },
+      settings,
+      ownedIds: owned,
+    })
+
+    expect(() => controller.restore()).not.toThrow()
+    expect(setTheme).not.toHaveBeenCalled()
+    ready = true
+    notify()
+    expect(setTheme).toHaveBeenCalledWith('design-md-claude')
+  })
+
   it('restores an owned persisted id only over a built-in current preference', () => {
     const b = makeBench({ current: 'system', durable: 'design-md-claude' })
     b.controller.restore()

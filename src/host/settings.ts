@@ -1,11 +1,9 @@
 import Schema from '@deepseek-ai/schemastery'
 import type { HostContext } from '../runtime/contracts.ts'
+import { THEMES_NAMESPACE, THEME_SELECTION_FIELD, type ThemePreferenceSettings } from '../runtime/identity.ts'
 
-export const THEMES_NAMESPACE = 'deepseek-harness-design-md-themes'
-export const THEME_SELECTION_FIELD = 'selection'
-export interface ThemePreferenceSettings {
-  readonly selection: string
-}
+export { THEMES_NAMESPACE, THEME_SELECTION_FIELD }
+export type { ThemePreferenceSettings }
 
 export const ThemePreferenceSchema = Schema.object({
   selection: Schema.string().default('system'),

@@ -14,6 +14,7 @@ function makeClientBench(options: { collideAt?: number; durable?: string } = {})
   let preference = 'system'
   const offThemeChange = vi.fn()
   const localeDispose = vi.fn()
+  const translate = vi.fn((key: string) => key)
   const sectionDispose = vi.fn()
   const disposeStyles = vi.fn()
   const effectCleanups: Array<() => void> = []
@@ -25,26 +26,48 @@ function makeClientBench(options: { collideAt?: number; durable?: string } = {})
       getTheme: () => ({ preference, active: catalog.find(entry => entry.id === preference)?.theme ?? catalog[0]!.theme, themes: catalog.map(entry => entry.theme), revision: 1 }),
     },
     settingsScope: {
-      bind: vi.fn(() => ({ getSnapshot: () => ({ value: { selection: options.durable ?? 'system' }, revision: 1 }), set: vi.fn(() => Promise.resolve()), subscribe: vi.fn(() => () => undefined) })),
+      bind: vi.fn(() => ({
+        getSnapshot: () => ({
+          status: 'ready' as const,
+          value: { selection: options.durable ?? 'system' },
+          base: undefined,
+          user: undefined,
+          revision: 1,
+          writable: true,
+          mode: 'host' as const,
+        }),
+        set: vi.fn(() => Promise.resolve()),
+        subscribe: vi.fn(() => () => undefined),
+      })),
     },
     slots: {
       inject: vi.fn((_name: string, factory: () => unknown) => factory()),
       register: registerSection,
     },
-    locale: { register: vi.fn(() => localeDispose), t: vi.fn(() => 'Themes') },
+    locale: { register: vi.fn(() => localeDispose), bind: vi.fn(() => translate) },
     effect: vi.fn((setup: () => void | (() => void)) => { const cleanup = setup(); if (typeof cleanup === 'function') effectCleanups.push(cleanup) }),
     on: vi.fn((_event: 'theme/change', _listener: unknown) => offThemeChange),
   }
-  return { ctx, operations, registerTheme, registerSection, themeDisposers, localeDispose, sectionDispose, offThemeChange, disposeStyles, disposeFiber: () => { for (const cleanup of [...effectCleanups].reverse()) cleanup() } }
+  return { ctx, operations, registerTheme, registerSection, themeDisposers, localeDispose, sectionDispose, offThemeChange, translate, disposeStyles, disposeFiber: () => { for (const cleanup of [...effectCleanups].reverse()) cleanup() } }
 }
 
 describe('client plugin assembly', () => {
-  it('registers 74 themes before one settings.section contribution and restore', () => {
+  it('registers 74 themes before one settings.section contribution and restore', async () => {
     const b = makeClientBench({ durable: 'design-md-claude' })
     apply(b.ctx)
+    await new Promise(resolve => setTimeout(resolve, 0))
     expect(b.registerTheme).toHaveBeenCalledTimes(74)
     expect(b.registerSection).toHaveBeenCalledTimes(1)
     expect(b.operations.indexOf('restore')).toBeGreaterThan(b.operations.lastIndexOf('register-theme'))
+  })
+
+  it('defers initial restore until the client effects have flushed', async () => {
+    const b = makeClientBench({ durable: 'design-md-claude' })
+    apply(b.ctx)
+    await Promise.resolve()
+    expect(b.operations).not.toContain('restore')
+    await new Promise(resolve => setTimeout(resolve, 0))
+    expect(b.operations).toContain('restore')
   })
 
   it('uses a stable id and localized label thunk', () => {
@@ -53,7 +76,14 @@ describe('client plugin assembly', () => {
     const options = b.registerSection.mock.calls[0]![0] as { name: string; id: string; label: () => string }
     expect(options.name).toBe('settings.section')
     expect(options.id).toBe('design-md-themes')
-    expect(options.label()).toBe('Themes')
+    expect(options.label()).toBe('title')
+    expect(b.translate).toHaveBeenCalledWith('title')
+  })
+
+  it('uses the Harness locale bind contract instead of a nonexistent locale.t method', () => {
+    const b = makeClientBench()
+    expect(() => apply(b.ctx)).not.toThrow()
+    expect(b.ctx.locale.bind).toHaveBeenCalledWith('settings.design-md-themes')
   })
 
   it('removes every owned contribution on dispose', () => {
