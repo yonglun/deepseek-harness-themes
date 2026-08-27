@@ -47,9 +47,9 @@
     "build": "tsdown --config-loader tsx && tsc -p tsconfig.host.json && tsc -p tsconfig.client.json",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
-    "themes:generate": "tsx scripts/generate-themes.ts",
-    "themes:verify": "tsx scripts/verify-generated.ts",
-    "pack:check": "pnpm pack --pack-destination .pack && tsx build/package-smoke.ts"
+    "themes:generate": "node --import tsx scripts/generate-themes.ts",
+    "themes:verify": "node --import tsx scripts/verify-generated.ts",
+    "pack:check": "pnpm pack --pack-destination .pack && node --import tsx build/package-smoke.ts"
   },
   "dependencies": {
     "clsx": "2.1.1"

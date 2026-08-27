@@ -102,21 +102,32 @@ export function normalizeTheme(source: SourceDesign, override?: ThemeOverride): 
   const warningSeed = applyOverrideRole('warning', source, override, firstColor(source.colors, ROLE_KEYS.warning) ?? '#a16207')
   const errorSeed = applyOverrideRole('error', source, override, firstColor(source.colors, ROLE_KEYS.error) ?? '#b91c1c')
   const textBackgrounds = [base, layer1, layer2, layer3]
+  const adjustedForegroundTokens: string[] = []
+  const corrected = (token: string, seed: string, backgrounds: readonly string[], minimum: number): string => {
+    let compliant = false
+    try {
+      compliant = backgrounds.every(background => contrastRatio(seed, background) >= minimum)
+    } catch {
+      compliant = false
+    }
+    if (!compliant) adjustedForegroundTokens.push(token)
+    return correctForeground(seed, backgrounds, minimum)
+  }
   const palette: CanonicalPalette = Object.freeze({
     base,
     layer1,
     layer2,
     layer3,
     overlay,
-    textPrimary: correctForeground(textSeed, textBackgrounds, 4.5),
-    textSecondary: correctForeground(textSecondary, textBackgrounds, 4.5),
-    textTertiary: correctForeground(textTertiary, textBackgrounds, 3),
-    accent: correctForeground(accent, [base], 3),
+    textPrimary: corrected('--dsw-alias-label-primary', textSeed, textBackgrounds, 4.5),
+    textSecondary: corrected('--dsw-alias-label-secondary', textSecondary, textBackgrounds, 4.5),
+    textTertiary: corrected('--dsw-alias-label-tertiary', textTertiary, textBackgrounds, 3),
+    accent: corrected('--dsw-alias-brand-primary', accent, [base], 3),
     border1,
     border2,
-    success: correctForeground(successSeed, [base], 3),
-    warning: correctForeground(warningSeed, [base], 3),
-    error: correctForeground(errorSeed, [base], 3),
+    success: corrected('--dsw-alias-state-success-primary', successSeed, [base], 3),
+    warning: corrected('--dsw-alias-state-warn-primary', warningSeed, [base], 3),
+    error: corrected('--dsw-alias-state-error-primary', errorSeed, [base], 3),
   })
   return Object.freeze({
     slug: source.slug,
@@ -128,6 +139,7 @@ export function normalizeTheme(source: SourceDesign, override?: ThemeOverride): 
     fontKind: override?.fontKind ?? inferFont(source),
     codeFontKind: 'mono',
     shadow: override?.shadow ?? 'soft',
+    adjustedForegroundTokens: Object.freeze(adjustedForegroundTokens),
     sourcePath: source.sourcePath,
     sourceSha256: source.sha256,
   })

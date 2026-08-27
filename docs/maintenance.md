@@ -1,0 +1,18 @@
+# Maintenance
+
+The source repository and commit are intentionally pinned. Generated files must be reproducible from that exact checkout.
+
+```bash
+git clone https://github.com/VoltAgent/awesome-design-md.git /tmp/awesome-design-md
+git -C /tmp/awesome-design-md checkout 8147538b4226ae41e2487a9179e3bcc1f68e8554
+rm -rf tmp/vendor/awesome-design-md
+mkdir -p tmp/vendor
+cp -R /tmp/awesome-design-md tmp/vendor/awesome-design-md
+pnpm themes:generate --source tmp/vendor/awesome-design-md --commit 8147538b4226ae41e2487a9179e3bcc1f68e8554 --output .
+pnpm themes:verify --source tmp/vendor/awesome-design-md --commit 8147538b4226ae41e2487a9179e3bcc1f68e8554 --output .
+pnpm test
+pnpm build
+pnpm pack:check
+```
+
+Review `src/themes/generated/source-manifest.json`, `reports/contrast.json`, and `docs/themes.md` together. A source hash or category change is a reviewable data change. Theme overrides live in `theme-overrides/` and require a reason; they are the only checked-in exceptions to direct source mapping.

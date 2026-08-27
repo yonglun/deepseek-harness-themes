@@ -1,5 +1,556 @@
 {
   "sourceCommit": "8147538b4226ae41e2487a9179e3bcc1f68e8554",
   "themeCount": 74,
+  "adjustedForegroundTokenCount": 118,
+  "themes": [
+    {
+      "slug": "airbnb",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-secondary",
+        "--dsw-alias-label-tertiary"
+      ],
+      "adjustedForegroundTokenCount": 2
+    },
+    {
+      "slug": "airtable",
+      "adjustedForegroundTokens": [],
+      "adjustedForegroundTokenCount": 0
+    },
+    {
+      "slug": "apple",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-secondary",
+        "--dsw-alias-label-tertiary"
+      ],
+      "adjustedForegroundTokenCount": 2
+    },
+    {
+      "slug": "binance",
+      "adjustedForegroundTokens": [],
+      "adjustedForegroundTokenCount": 0
+    },
+    {
+      "slug": "bmw",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary",
+        "--dsw-alias-state-success-primary",
+        "--dsw-alias-state-warn-primary"
+      ],
+      "adjustedForegroundTokenCount": 3
+    },
+    {
+      "slug": "bmw-m",
+      "adjustedForegroundTokens": [],
+      "adjustedForegroundTokenCount": 0
+    },
+    {
+      "slug": "bugatti",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary"
+      ],
+      "adjustedForegroundTokenCount": 1
+    },
+    {
+      "slug": "cal",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-secondary",
+        "--dsw-alias-label-tertiary",
+        "--dsw-alias-state-success-primary",
+        "--dsw-alias-state-warn-primary"
+      ],
+      "adjustedForegroundTokenCount": 4
+    },
+    {
+      "slug": "claude",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary",
+        "--dsw-alias-state-success-primary",
+        "--dsw-alias-state-warn-primary"
+      ],
+      "adjustedForegroundTokenCount": 3
+    },
+    {
+      "slug": "clay",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary",
+        "--dsw-alias-state-success-primary",
+        "--dsw-alias-state-warn-primary"
+      ],
+      "adjustedForegroundTokenCount": 3
+    },
+    {
+      "slug": "clickhouse",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary"
+      ],
+      "adjustedForegroundTokenCount": 1
+    },
+    {
+      "slug": "cohere",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-secondary",
+        "--dsw-alias-label-tertiary"
+      ],
+      "adjustedForegroundTokenCount": 2
+    },
+    {
+      "slug": "coinbase",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary"
+      ],
+      "adjustedForegroundTokenCount": 1
+    },
+    {
+      "slug": "composio",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary",
+        "--dsw-alias-brand-primary"
+      ],
+      "adjustedForegroundTokenCount": 2
+    },
+    {
+      "slug": "cursor",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary"
+      ],
+      "adjustedForegroundTokenCount": 1
+    },
+    {
+      "slug": "dell-1996",
+      "adjustedForegroundTokens": [],
+      "adjustedForegroundTokenCount": 0
+    },
+    {
+      "slug": "elevenlabs",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary"
+      ],
+      "adjustedForegroundTokenCount": 1
+    },
+    {
+      "slug": "expo",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary",
+        "--dsw-alias-state-error-primary"
+      ],
+      "adjustedForegroundTokenCount": 2
+    },
+    {
+      "slug": "ferrari",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-state-error-primary"
+      ],
+      "adjustedForegroundTokenCount": 1
+    },
+    {
+      "slug": "figma",
+      "adjustedForegroundTokens": [],
+      "adjustedForegroundTokenCount": 0
+    },
+    {
+      "slug": "framer",
+      "adjustedForegroundTokens": [],
+      "adjustedForegroundTokenCount": 0
+    },
+    {
+      "slug": "hashicorp",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary",
+        "--dsw-alias-brand-primary"
+      ],
+      "adjustedForegroundTokenCount": 2
+    },
+    {
+      "slug": "hp",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary"
+      ],
+      "adjustedForegroundTokenCount": 1
+    },
+    {
+      "slug": "ibm",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary",
+        "--dsw-alias-state-warn-primary"
+      ],
+      "adjustedForegroundTokenCount": 2
+    },
+    {
+      "slug": "intercom",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-secondary",
+        "--dsw-alias-label-tertiary",
+        "--dsw-alias-state-success-primary"
+      ],
+      "adjustedForegroundTokenCount": 3
+    },
+    {
+      "slug": "kraken",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary"
+      ],
+      "adjustedForegroundTokenCount": 1
+    },
+    {
+      "slug": "lamborghini",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-brand-primary"
+      ],
+      "adjustedForegroundTokenCount": 1
+    },
+    {
+      "slug": "linear.app",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary"
+      ],
+      "adjustedForegroundTokenCount": 1
+    },
+    {
+      "slug": "lovable",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary"
+      ],
+      "adjustedForegroundTokenCount": 1
+    },
+    {
+      "slug": "mastercard",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary",
+        "--dsw-alias-state-warn-primary"
+      ],
+      "adjustedForegroundTokenCount": 2
+    },
+    {
+      "slug": "meta",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary",
+        "--dsw-alias-state-warn-primary"
+      ],
+      "adjustedForegroundTokenCount": 2
+    },
+    {
+      "slug": "minimax",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-secondary",
+        "--dsw-alias-label-tertiary"
+      ],
+      "adjustedForegroundTokenCount": 2
+    },
+    {
+      "slug": "mintlify",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-secondary",
+        "--dsw-alias-label-tertiary"
+      ],
+      "adjustedForegroundTokenCount": 2
+    },
+    {
+      "slug": "miro",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-secondary",
+        "--dsw-alias-label-tertiary"
+      ],
+      "adjustedForegroundTokenCount": 2
+    },
+    {
+      "slug": "mistral.ai",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-secondary",
+        "--dsw-alias-label-tertiary"
+      ],
+      "adjustedForegroundTokenCount": 2
+    },
+    {
+      "slug": "mongodb",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-secondary",
+        "--dsw-alias-label-tertiary",
+        "--dsw-alias-brand-primary"
+      ],
+      "adjustedForegroundTokenCount": 3
+    },
+    {
+      "slug": "nike",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary"
+      ],
+      "adjustedForegroundTokenCount": 1
+    },
+    {
+      "slug": "nintendo-2001",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-primary",
+        "--dsw-alias-label-secondary",
+        "--dsw-alias-label-tertiary",
+        "--dsw-alias-brand-primary",
+        "--dsw-alias-state-success-primary",
+        "--dsw-alias-state-warn-primary",
+        "--dsw-alias-state-error-primary"
+      ],
+      "adjustedForegroundTokenCount": 7
+    },
+    {
+      "slug": "notion",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-secondary",
+        "--dsw-alias-label-tertiary",
+        "--dsw-alias-state-success-primary"
+      ],
+      "adjustedForegroundTokenCount": 3
+    },
+    {
+      "slug": "nvidia",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-brand-primary"
+      ],
+      "adjustedForegroundTokenCount": 1
+    },
+    {
+      "slug": "ollama",
+      "adjustedForegroundTokens": [],
+      "adjustedForegroundTokenCount": 0
+    },
+    {
+      "slug": "opencode.ai",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary",
+        "--dsw-alias-state-success-primary",
+        "--dsw-alias-state-warn-primary"
+      ],
+      "adjustedForegroundTokenCount": 3
+    },
+    {
+      "slug": "pinterest",
+      "adjustedForegroundTokens": [],
+      "adjustedForegroundTokenCount": 0
+    },
+    {
+      "slug": "playstation",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary"
+      ],
+      "adjustedForegroundTokenCount": 1
+    },
+    {
+      "slug": "posthog",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-secondary",
+        "--dsw-alias-label-tertiary",
+        "--dsw-alias-brand-primary"
+      ],
+      "adjustedForegroundTokenCount": 3
+    },
+    {
+      "slug": "raycast",
+      "adjustedForegroundTokens": [],
+      "adjustedForegroundTokenCount": 0
+    },
+    {
+      "slug": "renault",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-brand-primary",
+        "--dsw-alias-state-success-primary",
+        "--dsw-alias-state-warn-primary"
+      ],
+      "adjustedForegroundTokenCount": 3
+    },
+    {
+      "slug": "replicate",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary"
+      ],
+      "adjustedForegroundTokenCount": 1
+    },
+    {
+      "slug": "resend",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary"
+      ],
+      "adjustedForegroundTokenCount": 1
+    },
+    {
+      "slug": "revolut",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary"
+      ],
+      "adjustedForegroundTokenCount": 1
+    },
+    {
+      "slug": "runwayml",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-brand-primary",
+        "--dsw-alias-state-error-primary"
+      ],
+      "adjustedForegroundTokenCount": 2
+    },
+    {
+      "slug": "sanity",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary",
+        "--dsw-alias-state-success-primary"
+      ],
+      "adjustedForegroundTokenCount": 2
+    },
+    {
+      "slug": "sentry",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary"
+      ],
+      "adjustedForegroundTokenCount": 1
+    },
+    {
+      "slug": "shopify",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-secondary",
+        "--dsw-alias-label-tertiary",
+        "--dsw-alias-brand-primary"
+      ],
+      "adjustedForegroundTokenCount": 3
+    },
+    {
+      "slug": "slack",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary"
+      ],
+      "adjustedForegroundTokenCount": 1
+    },
+    {
+      "slug": "spacex",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary",
+        "--dsw-alias-brand-primary"
+      ],
+      "adjustedForegroundTokenCount": 2
+    },
+    {
+      "slug": "spotify",
+      "adjustedForegroundTokens": [],
+      "adjustedForegroundTokenCount": 0
+    },
+    {
+      "slug": "starbucks",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-state-warn-primary"
+      ],
+      "adjustedForegroundTokenCount": 1
+    },
+    {
+      "slug": "stripe",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-secondary",
+        "--dsw-alias-label-tertiary"
+      ],
+      "adjustedForegroundTokenCount": 2
+    },
+    {
+      "slug": "supabase",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary",
+        "--dsw-alias-brand-primary"
+      ],
+      "adjustedForegroundTokenCount": 2
+    },
+    {
+      "slug": "superhuman",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-secondary",
+        "--dsw-alias-label-tertiary"
+      ],
+      "adjustedForegroundTokenCount": 2
+    },
+    {
+      "slug": "tesla",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-primary",
+        "--dsw-alias-label-secondary",
+        "--dsw-alias-label-tertiary"
+      ],
+      "adjustedForegroundTokenCount": 3
+    },
+    {
+      "slug": "theverge",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-state-error-primary"
+      ],
+      "adjustedForegroundTokenCount": 1
+    },
+    {
+      "slug": "together.ai",
+      "adjustedForegroundTokens": [],
+      "adjustedForegroundTokenCount": 0
+    },
+    {
+      "slug": "uber",
+      "adjustedForegroundTokens": [],
+      "adjustedForegroundTokenCount": 0
+    },
+    {
+      "slug": "vercel",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary",
+        "--dsw-alias-state-warn-primary"
+      ],
+      "adjustedForegroundTokenCount": 2
+    },
+    {
+      "slug": "vodafone",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-secondary",
+        "--dsw-alias-label-tertiary"
+      ],
+      "adjustedForegroundTokenCount": 2
+    },
+    {
+      "slug": "voltagent",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary",
+        "--dsw-alias-state-error-primary"
+      ],
+      "adjustedForegroundTokenCount": 2
+    },
+    {
+      "slug": "warp",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary",
+        "--dsw-alias-state-success-primary",
+        "--dsw-alias-state-error-primary"
+      ],
+      "adjustedForegroundTokenCount": 3
+    },
+    {
+      "slug": "webflow",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary"
+      ],
+      "adjustedForegroundTokenCount": 1
+    },
+    {
+      "slug": "wired",
+      "adjustedForegroundTokens": [],
+      "adjustedForegroundTokenCount": 0
+    },
+    {
+      "slug": "wise",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary",
+        "--dsw-alias-brand-primary",
+        "--dsw-alias-state-success-primary",
+        "--dsw-alias-state-warn-primary"
+      ],
+      "adjustedForegroundTokenCount": 4
+    },
+    {
+      "slug": "x.ai",
+      "adjustedForegroundTokens": [],
+      "adjustedForegroundTokenCount": 0
+    },
+    {
+      "slug": "zapier",
+      "adjustedForegroundTokens": [
+        "--dsw-alias-label-tertiary"
+      ],
+      "adjustedForegroundTokenCount": 1
+    }
+  ],
   "failures": []
 }

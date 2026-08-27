@@ -46,6 +46,8 @@ export interface NormalizedTheme {
   readonly fontKind: 'sans' | 'serif' | 'mono'
   readonly codeFontKind: 'mono'
   readonly shadow: 'none' | 'soft' | 'strong'
+  /** Foreground roles whose source value required WCAG correction. */
+  readonly adjustedForegroundTokens: readonly string[]
   readonly sourcePath: string
   readonly sourceSha256: string
 }

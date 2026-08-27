@@ -1,4 +1,4 @@
-import { CONTRAST_PAIRS, THEME_TOKEN_NAMES, type ThemeTokenName } from '../../config/theme-tokens.ts'
+import { CONTRAST_PAIRS, THEME_TOKEN_NAMES, type ThemeTokenName } from '../config/theme-tokens.ts'
 import type { NormalizedTheme, ThemeCatalogEntry, ThemeDefinition } from './contracts.ts'
 import { contrastRatio, mixColors } from './colors.ts'
 

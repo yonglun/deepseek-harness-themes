@@ -29,6 +29,7 @@ interface GeneratedEntry {
   readonly category: string
   readonly colorScheme: 'light' | 'dark'
   readonly preview: Readonly<{ base: string; layer: string; sidebar: string; text: string; accent: string }>
+  readonly adjustedForegroundTokens: readonly string[]
   readonly theme: ReturnType<typeof compileTheme>['theme']
 }
 
@@ -85,17 +86,22 @@ export async function generateCatalog(options: GenerateCatalogOptions): Promise<
     categoryOverrides: { ...loaded.categories, ...options.categoryOverrides },
   })
   const entries = source.designs
-    .map(design => compileTheme(normalizeTheme(design, options.themeOverrides?.[design.slug] ?? loaded.themes[design.slug])))
-    .sort((a, b) => a.slug.localeCompare(b.slug))
-    .map(entry => ({
-      id: entry.id,
-      slug: entry.slug,
-      name: entry.name,
-      description: entry.description,
-      category: entry.category,
-      colorScheme: entry.colorScheme,
-      preview: entry.preview,
-      theme: entry.theme,
+    .map(design => {
+      const normalized = normalizeTheme(design, options.themeOverrides?.[design.slug] ?? loaded.themes[design.slug])
+      const compiled = compileTheme(normalized)
+      return { compiled, adjustedForegroundTokens: normalized.adjustedForegroundTokens }
+    })
+    .sort((a, b) => a.compiled.slug.localeCompare(b.compiled.slug))
+    .map(({ compiled, adjustedForegroundTokens }) => ({
+      id: compiled.id,
+      slug: compiled.slug,
+      name: compiled.name,
+      description: compiled.description,
+      category: compiled.category,
+      colorScheme: compiled.colorScheme,
+      preview: compiled.preview,
+      theme: compiled.theme,
+      adjustedForegroundTokens,
     }))
   const files: GeneratedFile[] = entries.map(entry => ({
     path: `src/themes/generated/themes/${entry.slug}.ts`,
@@ -117,7 +123,13 @@ export async function generateCatalog(options: GenerateCatalogOptions): Promise<
   })
   files.push({
     path: 'reports/contrast.json',
-    content: `${json({ sourceCommit: source.commit, themeCount: entries.length, failures: [] })}\n`,
+    content: `${json({
+      sourceCommit: source.commit,
+      themeCount: entries.length,
+      adjustedForegroundTokenCount: entries.reduce((count, entry) => count + entry.adjustedForegroundTokens.length, 0),
+      themes: entries.map(entry => ({ slug: entry.slug, adjustedForegroundTokens: entry.adjustedForegroundTokens, adjustedForegroundTokenCount: entry.adjustedForegroundTokens.length })),
+      failures: [],
+    })}\n`,
   })
   files.push({
     path: 'reports/sources.json',

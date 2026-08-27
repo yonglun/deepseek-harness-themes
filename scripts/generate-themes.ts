@@ -19,4 +19,4 @@ for (const file of files) {
   await mkdir(dirname(target), { recursive: true })
   await writeFile(target, file.content, 'utf8')
 }
-console.log(`generated ${files.length} files (${files.filter(file => file.path.includes('/themes/')).length} themes)`)
+console.log(`generated ${files.length} files (${files.filter(file => /^src\/themes\/generated\/themes\/.*\.ts$/.test(file.path)).length} themes)`)
