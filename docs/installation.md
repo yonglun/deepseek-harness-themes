@@ -7,10 +7,9 @@ From an isolated profile or the profile you normally use:
 ```bash
 dsh plugin add deepseek-harness-design-md-themes
 dsh plugin list
-dsh restart
 ```
 
-Open **Settings → Themes**. The section should appear as `design-md-themes` and show the three built-ins followed by the generated source cards.
+Restart the web client using the normal Harness launcher, then open **Settings → Themes**. The section should appear as `design-md-themes` and show the three built-ins followed by the generated source cards.
 
 ## Local package validation
 
