@@ -1,7 +1,8 @@
 # deepseek-harness-design-md-themes 设计规格
 
-日期：2026-08-27  
-状态：已获用户批准，待实现计划  
+日期：2026-08-27
+
+状态：已获用户批准，待实现计划
 目标包名：`deepseek-harness-design-md-themes`
 
 ## 1. 背景与目标
@@ -28,7 +29,8 @@ VoltAgent `awesome-design-md` 中当前固定版本的 74 份 `DESIGN.md`，生�
 
 - 仓库：<https://github.com/VoltAgent/awesome-design-md>
 - 固定提交：`8147538b4226ae41e2487a9179e3bcc1f68e8554`
-- 读取范围：`design-md/*/DESIGN.md`
+- 读取范围：`design-md/*/DESIGN.md`，以及根 `README.md` 中仅用于分类的 Collection
+  标题与条目
 - 该提交实际包含 74 个设计目录；生成器以目录清单为权威输入，不依赖 README
   中可能滞后的计数。
 - 许可证：MIT。项目保留许可证文本、来源链接和提交号。
@@ -127,11 +129,16 @@ deepseek-harness-design-md-themes/
 生成器从显式指定的本地上游 checkout 读取固定提交中的 74 份
 `design-md/*/DESIGN.md`，不在脚本内部隐式拉取网络资源。它提取：
 
-- slug、显示名称、描述和上游分类；
+- slug、显示名称和描述；
 - `colors` 中的颜色值与语义键；
 - `typography` 中的字体类别、字重和角色；
 - 可映射的阴影或 elevation 信息；
 - 用于诊断的来源路径和原始角色名称。
+
+领域分类来自固定提交根 `README.md` 的 Collection 分组。生成器要求每个已识别
+条目最多属于一个分组；README 未收录的目录必须由
+`theme-overrides/categories.yaml` 显式归类。最终分类表必须恰好覆盖 74 个 slug，
+既不能遗漏也不能包含未知项。根 README 的摘要与设计文件摘要一并进入来源清单。
 
 不同文档中的颜色命名被归一化为中间模型：
 
@@ -191,9 +198,12 @@ deepseek-harness-design-md-themes/
 - markdown code block；
 - sidebar fill。
 
-校正遵循最小变化原则：优先调整前景文字的亮度，在不破坏可读性的前提下保留
-品牌主色。若自动调整超过允许边界或无法满足所有组合，生成失败并要求增加人工
-override。报告记录原始值、最终值、对比度和调整原因。
+校正阶段不改变背景、表面或品牌 token，只调整由中间模型派生的文字前景 token。
+算法在 OKLCH 中保持原 hue 和 chroma，通过确定性二分搜索寻找与原 lightness
+距离最近、位于 sRGB 色域且满足目标对比度的值。强调色上的文字若原值不合格，
+只允许在原值、纯黑和纯白中选择距离原值最近的合格候选。一个共享前景 token
+无法同时通过其全部目标表面，或不存在合格候选时，生成失败并要求人工 override
+纠正语义映射。报告记录原始值、最终值、对比度和调整原因。
 
 ### 5.6 确定性与上游变化
 
@@ -241,6 +251,12 @@ Client 入口声明公开服务依赖：`theme`、`settingsScope`、`slots` 和 
 同时让 Harness 原生 Theme 服务执行正常的内置偏好写入，并把插件自有选择同步为
 相同 ID。从 Harness 原生 Appearance 控件发生的内置主题切换也会通过
 `theme/change` 清除过期的第三方恢复选择。
+
+插件只持久化自己的 74 个 ID 和三个内置 ID。若激活时 Theme 服务已经选中另一个
+插件注册的第三方 ID，本插件尊重现状，不恢复并覆盖自己的历史选择；运行期间看到
+未知第三方 ID 时只更新“当前由其他插件管理”的展示状态，不写入本插件设置。
+连续点击产生的设置写入按手势顺序串行化，并以 revision 防止较早的异步结果覆盖
+较新的选择。
 
 按 Harness 当前设置边界，loopback 浏览器可持久化到 Host 设置；远程浏览器选择
 保持当前进程有效。插件不使用 `localStorage` 绕过该边界。
