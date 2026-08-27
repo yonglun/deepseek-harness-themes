@@ -1,0 +1,7 @@
+reason: Preserve the 1996 catalog-era serif body and flat, shadowless source-role treatment.
+fontKind: serif
+shadow: none
+sourceRoles:
+  base: canvas
+  textPrimary: ink
+  accent: primary
