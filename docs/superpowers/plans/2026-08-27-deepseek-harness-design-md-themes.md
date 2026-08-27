@@ -92,6 +92,7 @@ cordis.patch.yml                    Profile bundle layer
 package.json                        npm and dsh manifests
 pnpm-lock.yaml
 tsconfig.json
+tsconfig.host.json
 tsconfig.client.json
 tsdown.config.ts
 vitest.config.ts
@@ -105,6 +106,7 @@ vitest.config.ts
 - Create: `package.json`
 - Create: `pnpm-workspace.yaml`
 - Create: `tsconfig.json`
+- Create: `tsconfig.host.json`
 - Create: `tsconfig.client.json`
 - Create: `tsdown.config.ts`
 - Create: `vitest.config.ts`
@@ -187,7 +189,7 @@ Expected: FAIL because `package.json` and the Vitest toolchain are not present.
     "bundle": { "patch": "./cordis.patch.yml" }
   },
   "scripts": {
-    "build": "tsdown && tsc -p tsconfig.client.json",
+    "build": "tsdown --config-loader tsx && tsc -p tsconfig.host.json && tsc -p tsconfig.client.json",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
     "themes:generate": "tsx scripts/generate-themes.ts",
@@ -245,7 +247,7 @@ Expected: FAIL because `package.json` and the Vitest toolchain are not present.
       name: deepseek-harness-design-md-themes
 ```
 
-`build/client-bundle.ts` must emit two configs: an ESM Host library and a browser CJS factory. Start with this exact no-CSS foundation; Task 10 adds the CSS Module plugin when the first stylesheet exists:
+`build/client-bundle.ts` must emit two configs: an ESM Host library and a browser CJS factory. Set `dts: false` in the tsdown Host config; `tsconfig.host.json` and `tsconfig.client.json` separately emit declarations because tsdown 0.22.2 otherwise invokes an unavailable `unrun` resolver in this standalone package. Start with this exact no-CSS foundation; Task 10 adds the CSS Module plugin when the first stylesheet exists:
 
 ```ts
 import type { UserConfig } from 'tsdown'
@@ -260,7 +262,7 @@ export function clientBundle(id: string): UserConfig[] {
       outDir: 'lib',
       format: ['esm'],
       fixedExtension: false,
-      dts: true,
+      dts: false,
       clean: false,
     },
     {
@@ -314,7 +316,7 @@ Run: `pnpm install && pnpm exec vitest run tests/package-contract.spec.ts && pnp
 Expected: one passing test; `lib/index.js`, `lib/client.js`, and declarations exist.
 
 ```bash
-git add package.json pnpm-lock.yaml pnpm-workspace.yaml tsconfig.json tsconfig.client.json tsdown.config.ts vitest.config.ts build/client-bundle.ts src/index.ts src/client.ts src/css-modules.d.ts cordis.patch.yml tests/package-contract.spec.ts .gitignore
+git add package.json pnpm-lock.yaml pnpm-workspace.yaml tsconfig.json tsconfig.host.json tsconfig.client.json tsdown.config.ts vitest.config.ts build/client-bundle.ts src/index.ts src/client.ts src/css-modules.d.ts cordis.patch.yml tests/package-contract.spec.ts .gitignore
 git commit -m "build: scaffold external dsh theme bundle"
 ```
 
