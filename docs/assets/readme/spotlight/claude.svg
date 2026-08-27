@@ -1,8 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420" role="img" aria-labelledby="title">
   <title id="title">Claude theme preview</title>
   <rect width="720" height="420" rx="28" fill="#111318"/>
-  <g transform="translate(36 36)">
-    <g data-theme-id="design-md-claude">
+  <g transform="translate(36 36)"><g data-theme-id="design-md-claude">
       <rect width="648" height="286" rx="18" fill="#faf9f5"/>
       <rect x="143" width="505" height="286" rx="18" fill="#f5f0e8"/>
       <rect width="143" height="286" rx="18" fill="#f5f0e8"/>

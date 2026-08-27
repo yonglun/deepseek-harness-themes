@@ -1,5 +1,7 @@
 # Installation
 
+[Chinese](installation.zh-CN.md)
+
 ## Harness plugin manager
 
 From an isolated profile or the profile you normally use:
@@ -7,6 +9,12 @@ From an isolated profile or the profile you normally use:
 ```bash
 dsh plugin add deepseek-harness-design-md-themes
 dsh plugin list
+```
+
+For a local tarball during development, install the packaged artifact into an isolated profile:
+
+```bash
+dsh plugin --profile web add --offline /path/to/deepseek-harness-design-md-themes-0.1.0.tgz
 ```
 
 Restart the web client using the normal Harness launcher, then open **Settings → Themes**. The section should appear as `design-md-themes` and show the three built-ins followed by the generated source cards.

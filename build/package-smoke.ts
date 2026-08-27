@@ -7,7 +7,24 @@ const execFileAsync = promisify(execFile)
 export const REQUIRED_PACKAGE_FILES = Object.freeze([
   'package/README.md',
   'package/README.zh.md',
+  'package/docs/installation.md',
+  'package/docs/installation.zh-CN.md',
+  'package/docs/maintenance.md',
+  'package/docs/maintenance.zh-CN.md',
+  'package/docs/themes.md',
+  'package/docs/themes.zh-CN.md',
+  'package/docs/assets/readme/hero.png',
+  'package/docs/assets/readme/theme-atlas.svg',
+  'package/docs/assets/readme/spotlight/airbnb.svg',
+  'package/docs/assets/readme/spotlight/binance.svg',
+  'package/docs/assets/readme/spotlight/claude.svg',
+  'package/docs/assets/readme/spotlight/ferrari.svg',
+  'package/docs/assets/readme/spotlight/linear.app.svg',
+  'package/docs/assets/readme/spotlight/nintendo-2001.svg',
+  'package/docs/assets/readme/spotlight/posthog.svg',
+  'package/docs/assets/readme/spotlight/spotify.svg',
   'package/LICENSE',
+  'package/THIRD_PARTY_NOTICES.zh-CN.md',
   'package/THIRD_PARTY_NOTICES.md',
   'package/cordis.patch.yml',
   'package/lib/index.js',
@@ -31,6 +48,7 @@ export async function assertPackageSmoke(tarballPath: string): Promise<void> {
   const fileSet = new Set(files)
   for (const required of REQUIRED_PACKAGE_FILES) if (!fileSet.has(required)) throw new Error(`package is missing ${required}`)
   if ([...fileSet].some(file => /(?:^|\/)(?:src|tests|tmp|node_modules)(?:\/|$)/.test(file))) throw new Error('package contains development-only source files')
+  if ([...fileSet].some(file => file.includes('/docs/superpowers/') || file.includes('/.superpowers/'))) throw new Error('package contains internal planning files')
 
   const packageJson = JSON.parse(await (async () => {
     const { stdout } = await execFileAsync('tar', ['-xOf', tarballPath, 'package/package.json'])
@@ -59,6 +77,7 @@ export async function assertPackageSmoke(tarballPath: string): Promise<void> {
   if (!client.includes('window.__ModuleLoader__.load')) throw new Error('client bundle is not a Harness module-loader artifact')
   if (/from\s+["'](?:\.|\/)/.test(client) || /import\s*\(/.test(client)) throw new Error('client bundle contains a source-relative or dynamic source import')
   if (/document\.querySelector\(/.test(client)) throw new Error('client bundle reaches outside its owned DOM mount')
+  if (/require\(["']@deepseek-ai\/schemastery["']\)/.test(client)) throw new Error('client bundle imports the host-only schemastery runtime')
 
   const patch = await (async () => {
     const { stdout } = await execFileAsync('tar', ['-xOf', tarballPath, 'package/cordis.patch.yml'])

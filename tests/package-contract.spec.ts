@@ -24,8 +24,12 @@ describe('package contract', () => {
       'cordis.patch.yml',
       'README.md',
       'README.zh.md',
+      'docs/*.md',
+      'docs/assets/readme/**/*',
       'LICENSE',
       'THIRD_PARTY_NOTICES.md',
+      'THIRD_PARTY_NOTICES.zh-CN.md',
     ])
+    expect(pkg.scripts['readme:assets']).toBe('node --import tsx scripts/generate-readme-assets.ts')
   })
 })

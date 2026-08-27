@@ -21,8 +21,11 @@
     "cordis.patch.yml",
     "README.md",
     "README.zh.md",
+    "docs/*.md",
+    "docs/assets/readme/**/*",
     "LICENSE",
-    "THIRD_PARTY_NOTICES.md"
+    "THIRD_PARTY_NOTICES.md",
+    "THIRD_PARTY_NOTICES.zh-CN.md"
   ],
   "engines": {
     "node": "^22.19.0 || >=24.0.0"
@@ -47,6 +50,7 @@
     "build": "tsdown --config-loader tsx && tsc -p tsconfig.host.json && tsc -p tsconfig.client.json",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
+    "readme:assets": "node --import tsx scripts/generate-readme-assets.ts",
     "themes:generate": "node --import tsx scripts/generate-themes.ts",
     "themes:verify": "node --import tsx scripts/verify-generated.ts",
     "pack:check": "pnpm pack --pack-destination .pack && node --import tsx build/package-smoke.ts"

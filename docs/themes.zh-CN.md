@@ -1,10 +1,10 @@
-# Generated theme catalog
+# 生成的主题目录
 
-[Chinese](themes.zh-CN.md)
+[英文版](themes.md)
 
-Generated from VoltAgent/awesome-design-md commit `8147538b4226ae41e2487a9179e3bcc1f68e8554`. Every source is read once, normalized into the allowlisted DeepSeek tokens, and compiled into an immutable theme. “Adjusted foreground tokens” counts source roles that needed WCAG correction during normalization; the complete role list is in `reports/contrast.json`.
+本目录由 VoltAgent/awesome-design-md commit `8147538b4226ae41e2487a9179e3bcc1f68e8554` 生成。每个来源只读取一次，经允许的 DeepSeek token 归一化后编译为不可变主题。“调整的前景 token 数”表示归一化时因 WCAG 对比度要求而修正的来源角色数量，完整角色清单见 `reports/contrast.json`。
 
-| Name | Theme ID | Category | Scheme | Source | Adjusted foreground tokens |
+| 名称 | 主题 ID | 类别 | 配色 | 来源 | 调整的前景 token 数 |
 |---|---|---|---|---|---:|
 | Airbnb | `design-md-airbnb` | ecommerce-retail | light | `design-md/airbnb/DESIGN.md` | 2 |
 | Airtable | `design-md-airtable` | design-creative | light | `design-md/airtable/DESIGN.md` | 0 |

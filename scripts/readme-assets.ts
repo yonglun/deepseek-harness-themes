@@ -43,8 +43,7 @@ function validateCatalog(catalog: readonly ThemeCatalogEntry[]): void {
 function miniInterface(entry: ThemeCatalogEntry, width: number, height: number): string {
   const sidebarWidth = Math.round(width * 0.22)
   const contentX = sidebarWidth + 28
-  return `
-    <g data-theme-id="${escapeXml(entry.id)}">
+  return `<g data-theme-id="${escapeXml(entry.id)}">
       <rect width="${width}" height="${height}" rx="18" fill="${entry.preview.base}"/>
       <rect x="${sidebarWidth}" width="${width - sidebarWidth}" height="${height}" rx="18" fill="${entry.preview.layer}"/>
       <rect width="${sidebarWidth}" height="${height}" rx="18" fill="${entry.preview.sidebar}"/>

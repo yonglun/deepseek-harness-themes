@@ -9,7 +9,7 @@
 ## 快速开始
 
 ```bash
-dsh plugin add deepseek-harness-design-md-themes
+dsh plugin --profile web add deepseek-harness-design-md-themes
 dsh web
 ```
 

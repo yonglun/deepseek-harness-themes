@@ -21,7 +21,7 @@ describe('README showcase', () => {
     const markdown = await readFile(resolve(file), 'utf8')
     for (const asset of requiredAssets) expect(markdown).toContain(asset)
     const hero = markdown.indexOf('docs/assets/readme/hero.png')
-    const install = markdown.indexOf('dsh plugin add deepseek-harness-design-md-themes')
+    const install = markdown.indexOf('dsh plugin --profile web add deepseek-harness-design-md-themes')
     const spotlight = markdown.indexOf('docs/assets/readme/spotlight/claude.svg')
     const atlas = markdown.indexOf('docs/assets/readme/theme-atlas.svg')
     expect(hero).toBeGreaterThan(-1)

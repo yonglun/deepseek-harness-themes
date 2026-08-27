@@ -9,7 +9,7 @@ Chinese version: [README.zh.md](README.zh.md)
 ## Quick start
 
 ```bash
-dsh plugin add deepseek-harness-design-md-themes
+dsh plugin --profile web add deepseek-harness-design-md-themes
 dsh web
 ```
 
