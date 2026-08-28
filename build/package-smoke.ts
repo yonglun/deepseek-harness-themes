@@ -1,4 +1,5 @@
 import { execFile } from 'node:child_process'
+import { readFile } from 'node:fs/promises'
 import { promisify } from 'node:util'
 import { basename, resolve } from 'node:path'
 
@@ -36,6 +37,13 @@ export const REQUIRED_PACKAGE_FILES = Object.freeze([
 export async function listTarballFiles(tarballPath: string): Promise<readonly string[]> {
   const { stdout } = await execFileAsync('tar', ['-tzf', tarballPath])
   return stdout.split(/\r?\n/).map(line => line.trim()).filter(Boolean).sort()
+}
+
+export function packageTarballFilename(manifest: Record<string, unknown>): string {
+  if (typeof manifest.name !== 'string' || typeof manifest.version !== 'string') {
+    throw new Error('package manifest must declare string name and version fields')
+  }
+  return `${manifest.name}-${manifest.version}.tgz`
 }
 
 function assertSafeArchivePath(path: string): void {
@@ -90,7 +98,13 @@ export async function assertPackageSmoke(tarballPath: string): Promise<void> {
 
 async function main(): Promise<void> {
   const input = process.argv[2]
-  const tarball = input ? resolve(input) : resolve('.pack', 'deepseek-harness-design-md-themes-0.1.0.tgz')
+  let tarball: string
+  if (input) {
+    tarball = resolve(input)
+  } else {
+    const manifest = JSON.parse(await readFile(resolve('package.json'), 'utf8')) as Record<string, unknown>
+    tarball = resolve('.pack', packageTarballFilename(manifest))
+  }
   await assertPackageSmoke(tarball)
   console.log(`package smoke passed: ${basename(tarball)}`)
 }
