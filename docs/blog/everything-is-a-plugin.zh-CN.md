@@ -14,7 +14,7 @@
 
 表面上看，这只是一次界面定制。
 
-但真正让我觉得有意思的，并不是把 Claude、Linear、Binance 或 Ferrari 的色彩放进了 Harness，而是整个过程不需要向 Harness 申请一个专用主题入口，也不需要修改它的启动代码。插件只声明自己依赖哪些能力，然后把新的能力注册进去。
+但真正值得追问的，并不是怎样把 Claude、Linear、Binance 或 Ferrari 的色彩放进 Harness，而是为什么整个过程不需要向 Harness 申请一个专用主题入口，也不需要修改它的启动代码。插件只声明自己依赖哪些能力，然后把新的能力注册进去。
 
 这正好给了我们一个很具体的入口，去理解 DeepSeek Harness 那句很醒目的架构宣言。
 
@@ -82,7 +82,7 @@ export function apply(ctx) {
 
 第一条关系在 Host，也就是运行于 Node.js 的宿主侧。插件向 Settings Service 注册一个只属于自己的设置命名空间 `deepseek-harness-design-md-themes`，其中保存用户选择的主题 ID。
 
-生产代码的核心形状可以压缩成下面这样。
+[仓库里的 Host 实现](https://github.com/yonglun/deepseek-harness-themes/blob/d0ac8e4/src/host/settings.ts)可以压缩成下面这个核心形状。
 
 ```ts
 // 基于 src/host/settings.ts 的精简示意
@@ -99,9 +99,9 @@ export function apply(ctx) {
 
 另外三条关系发生在浏览器里的 Client。
 
-Theme Service 接收 74 份主题定义，并在主题变化时发布新的快照。Settings Scope 让浏览器读取和更新刚才登记的插件设置。UI Slots 允许插件向 Harness 的设置界面贡献一个新 section。Locale Service 则登记中文和英文文案。
+[Theme Service](https://github.com/deepseek-ai/deepseek-harness/blob/master/packages/client/ui-theme/README.md) 接收 74 份主题定义，并在主题变化时发布新的快照。Settings Scope 让浏览器读取和更新刚才登记的插件设置。UI Slots 允许插件向 Harness 的设置界面贡献一个新 section。Locale Service 则登记中文和英文文案。
 
-把生产代码中的类型、安全检查和状态同步逻辑拿掉，协作关系大致是这样。
+把 [Client 实现](https://github.com/yonglun/deepseek-harness-themes/blob/d0ac8e4/src/client.ts)中的类型、安全检查和状态同步逻辑拿掉，协作关系大致是这样。
 
 ```ts
 // 基于 src/client.ts 的概念性精简示意
@@ -207,7 +207,7 @@ Plugin 是能力实现，也就是带有 `apply(ctx)` 的代码。Bundle 是分�
 
 4、用 `inject` 声明依赖。
 
-不要假设加载顺序，也不要在插件里轮询服务是否出现。把依赖写出来，让 Cordis 在条件满足后启动插件。当某个必需服务消失时，依赖它的插件也能随生命周期卸载，并在服务回来后重新加载。
+不要假设加载顺序，也不要在插件里轮询服务是否出现。把依赖写出来，让 Cordis 在条件满足后启动插件。官方的[服务与依赖文档](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/user/develop/framework/service.md)还规定，当某个必需服务消失时，依赖它的插件会自动卸载，并在服务回来后重新加载。
 
 5、让每一项注册都能撤销。
 
@@ -260,6 +260,7 @@ GitHub 安装并非不可以，但 TypeScript 源码包通常需要 `prepare` �
 - [DeepSeek Harness Architecture](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/architecture.md)
 - [Cordis Primer](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/cordis-primer.md)
 - [Your first plugin](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/user/develop/basic/index.md)
+- [Services and dependencies](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/user/develop/framework/service.md)
 - [Package and install a plugin](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/user/develop/basic/publish.md)
 - [DeepSeek Harness UI Theme](https://github.com/deepseek-ai/deepseek-harness/blob/master/packages/client/ui-theme/README.md)
 - [deepseek-harness-themes 源码](https://github.com/yonglun/deepseek-harness-themes)
