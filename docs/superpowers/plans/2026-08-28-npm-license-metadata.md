@@ -13,6 +13,7 @@
 - Declare the license with the exact SPDX identifier `MIT`.
 - Release the exact patch version `0.1.1`; do not rewrite or unpublish `0.1.0`.
 - Do not change `LICENSE`, third-party notices, themes, UI behavior, plugin registration, dependencies, or Harness compatibility.
+- Keep explicit tarball CLI arguments authoritative; only the no-argument package-smoke default may derive a path from manifest metadata.
 - Publish only through the official npm registry with account 2FA proof-of-presence.
 - Keep GitHub `master` deployable and ensure the release commit is pushed before npm publication.
 
@@ -90,7 +91,80 @@ git add package.json tests/package-contract.spec.ts
 git commit -m "fix: declare MIT license for npm"
 ```
 
-### Task 2: Gate, integrate, publish, and verify `0.1.1`
+### Task 2: Make package smoke version-independent
+
+**Files:**
+- Modify: `build/package-smoke.ts`
+- Modify: `tests/package-smoke.spec.ts`
+
+**Interfaces:**
+- Consumes: a manifest object with `name` and `version` fields.
+- Produces: `packageTarballFilename(manifest: Record<string, unknown>): string`, returning the npm tarball filename for the manifest or throwing a clear error for invalid metadata.
+
+- [ ] **Step 1: Add the failing filename regression test**
+
+Import `packageTarballFilename` from `build/package-smoke.ts` and add:
+
+```ts
+it('derives the tarball filename from the current manifest version', () => {
+  expect(packageTarballFilename({
+    name: 'deepseek-harness-design-md-themes',
+    version: '9.8.7',
+  })).toBe('deepseek-harness-design-md-themes-9.8.7.tgz')
+})
+```
+
+- [ ] **Step 2: Run the focused test and verify RED**
+
+Run:
+
+```bash
+fnm exec --using=24.19.0 npx vitest run tests/package-smoke.spec.ts
+```
+
+Expected: FAIL because `packageTarballFilename` is not exported.
+
+- [ ] **Step 3: Implement manifest-driven filename resolution**
+
+Add `readFile` from `node:fs/promises`. Export this helper:
+
+```ts
+export function packageTarballFilename(manifest: Record<string, unknown>): string {
+  if (typeof manifest.name !== 'string' || typeof manifest.version !== 'string') {
+    throw new Error('package manifest must declare string name and version fields')
+  }
+  return `${manifest.name}-${manifest.version}.tgz`
+}
+```
+
+Replace the hard-coded default in `main()` with:
+
+```ts
+const manifest = JSON.parse(await readFile(resolve('package.json'), 'utf8')) as Record<string, unknown>
+const tarball = input ? resolve(input) : resolve('.pack', packageTarballFilename(manifest))
+```
+
+- [ ] **Step 4: Run focused tests and the real CLI smoke check**
+
+Run:
+
+```bash
+fnm exec --using=24.19.0 npx vitest run tests/package-smoke.spec.ts
+fnm exec --using=24.19.0 node --import tsx build/package-smoke.ts
+```
+
+Expected: the focused test passes and CLI output names `deepseek-harness-design-md-themes-0.1.1.tgz`.
+
+- [ ] **Step 5: Commit the release-tooling fix**
+
+Run `git diff --check`, review only the helper, default-path wiring, and regression test, then commit:
+
+```bash
+git add build/package-smoke.ts tests/package-smoke.spec.ts
+git commit -m "fix: derive package smoke tarball version"
+```
+
+### Task 3: Gate, integrate, publish, and verify `0.1.1`
 
 **Files:**
 - Verify only: `package.json`, `LICENSE`, `.pack/deepseek-harness-design-md-themes-0.1.1.tgz`
