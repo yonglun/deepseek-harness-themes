@@ -2,6 +2,27 @@
   "name": "deepseek-harness-design-md-themes",
   "version": "0.1.0",
   "description": "74 non-invasive DeepSeek Harness themes generated from awesome-design-md",
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "theme",
+    "themes",
+    "plugin",
+    "design-md"
+  ],
+  "homepage": "https://github.com/yonglun/deepseek-harness-themes#readme",
+  "bugs": {
+    "url": "https://github.com/yonglun/deepseek-harness-themes/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yonglun/deepseek-harness-themes.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "type": "module",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

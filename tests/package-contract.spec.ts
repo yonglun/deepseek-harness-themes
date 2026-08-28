@@ -31,5 +31,25 @@ describe('package contract', () => {
       'THIRD_PARTY_NOTICES.zh-CN.md',
     ])
     expect(pkg.scripts['readme:assets']).toBe('node --import tsx scripts/generate-readme-assets.ts')
+    expect(pkg.repository).toEqual({
+      type: 'git',
+      url: 'git+https://github.com/yonglun/deepseek-harness-themes.git',
+    })
+    expect(pkg.homepage).toBe('https://github.com/yonglun/deepseek-harness-themes#readme')
+    expect(pkg.bugs).toEqual({ url: 'https://github.com/yonglun/deepseek-harness-themes/issues' })
+    expect(pkg.keywords).toEqual([
+      'deepseek',
+      'deepseek-harness',
+      'dsh',
+      'theme',
+      'themes',
+      'plugin',
+      'design-md',
+    ])
+    expect(pkg.publishConfig).toEqual({
+      access: 'public',
+      registry: 'https://registry.npmjs.org/',
+    })
+    expect(pkg.private).not.toBe(true)
   })
 })
