@@ -184,7 +184,7 @@ fnm exec --using=24.19.0 npm run build
 git diff --check
 ```
 
-Expected: 21 test files pass, 51 tests pass and 1 remains skipped; type checking and the host/client build exit successfully; the worktree has no uncommitted changes.
+Expected: 21 test files pass, 53 tests pass and 1 remains skipped; type checking and the host/client build exit successfully; the worktree has no uncommitted changes.
 
 - [ ] **Step 2: Build and inspect the publish tarball**
 
