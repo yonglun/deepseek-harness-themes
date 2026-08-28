@@ -31,6 +31,8 @@ describe('package contract', () => {
       'THIRD_PARTY_NOTICES.zh-CN.md',
     ])
     expect(pkg.scripts['readme:assets']).toBe('node --import tsx scripts/generate-readme-assets.ts')
+    expect(pkg.version).toBe('0.1.1')
+    expect(pkg.license).toBe('MIT')
     expect(pkg.repository).toEqual({
       type: 'git',
       url: 'git+https://github.com/yonglun/deepseek-harness-themes.git',

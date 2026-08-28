@@ -1,7 +1,8 @@
 {
   "name": "deepseek-harness-design-md-themes",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "74 non-invasive DeepSeek Harness themes generated from awesome-design-md",
+  "license": "MIT",
   "keywords": [
     "deepseek",
     "deepseek-harness",
