@@ -2,6 +2,7 @@ node_modules/
 lib/
 .pack/
 .superpowers/
+.worktrees/
 coverage/
 tmp/
 *.DS_Store
